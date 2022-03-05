@@ -1,6 +1,5 @@
 import MainPage from '../pages/main/MainPage';
 
-
 interface PathItem {
   path: string;
   component: React.ComponentClass<any> | React.FunctionComponent<any>;
