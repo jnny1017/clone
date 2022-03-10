@@ -38,7 +38,27 @@
       }
     ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/unbound-method": "off"
+    "@typescript-eslint/unbound-method": "off",
+    "import/extensions": ["off"],
+    "import/prefer-default-export": "off",
+    "no-plusplus": "off",
+    "semi": ["error", "always"],
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".tsx", ".jsx"] }
+    ],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/order": [
+      "error",
+      {
+        "groups": ["external", "internal"],
+        "newlines-between": "always"
+      }
+    ],
+    "@typescript-eslint/type-annotation-spacing": ["error"],
+    "@typescript-eslint/method-signature-style": ["error"],
+    "unused-imports/no-unused-imports": ["error"],
+    "react/jsx-indent-props": ["error", "first"]
   },
   "settings": {
     "react": {
