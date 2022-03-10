@@ -1,5 +1,5 @@
 import Slider from '../../components/slider';
-import { mainBannerFixture } from '../../fixtures';
+import { mainBannerFixture } from './data';
 import { StyledMainBanner } from '../../styles/mainStyles';
 
 export default function MainPage() {
