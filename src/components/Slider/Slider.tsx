@@ -23,12 +23,12 @@ export default function Slider({ slides }: Props) {
       navigation={true}
       modules={[Pagination, Navigation, Autoplay]}
     >
-      {slides.data.map((slide: { id: string, image_url: string }, index: number) => (
+      {slides.data.map(({ id, image_url }, index) => (
         <SwiperSlide
-          key={slide.id}
+          key={id}
           virtualIndex={index}
         >
-          <img src={slide.image_url} alt="메인배너 이미지" />
+          <img src={image_url} alt="메인배너 이미지" />
         </SwiperSlide>
       ))}
     </Swiper>
