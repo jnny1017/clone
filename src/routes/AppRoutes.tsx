@@ -1,5 +1,5 @@
 import { Redirect, Switch, Route, useLocation } from 'react-router-dom';
-import { appRoutes } from './routes.model';
+import { appRoutes } from '../routes/routes.model';
 import { useEffect } from 'react';
 
 const AppRoutes = () => {
