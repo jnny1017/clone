@@ -4,10 +4,11 @@ import { StyledMain } from 'styles/mainStyles';
 
 export default function MainPage() {
   return (
-    <StyledMainBanner>
-      <Slider
-        slides={mainBannerFixture}
-      />
-    </StyledMainBanner>
+    <>
+      <MainBanner />
+      <StyledMain>
+        <MdChoiceSection />
+      </StyledMain>
+    </>
   );
 }
