@@ -1,10 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { Category } from 'pages/main/models'
 
-export interface CategoryState {
-  code: string
-}
-
-const initialState: CategoryState = {
+const initialState: Category = {
   code: ''
 }
 

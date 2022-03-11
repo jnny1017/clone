@@ -1,6 +1,6 @@
 export interface Category {
   code: string,
-  name: string,
+  name?: string,
 }
 
 // TODO 네이밍 생각해보기
