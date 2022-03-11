@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import { MainBanner } from '../../../pages/main/models'
+import { MainBanner } from 'pages/main/models'
 
 interface Props {
   slides: Pick<MainBanner, 'data'>;

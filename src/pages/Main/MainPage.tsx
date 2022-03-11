@@ -1,6 +1,6 @@
-import { Slider } from '../../components/main/mainBanner';
-import { mainBannerFixture } from './data';
-import { StyledMainBanner } from '../../styles/mainStyles';
+import { MainBanner } from 'components/main/mainBanner';
+import { MdChoiceSection } from 'components/main/mdChoice';
+import { StyledMain } from 'styles/mainStyles';
 
 export default function MainPage() {
   return (
