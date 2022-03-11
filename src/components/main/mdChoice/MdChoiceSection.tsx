@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { RootState } from 'store'
+import { filter } from 'mainSlice'
 
 import { MdChoiceCategory, MdChoiceList } from 'components/main/mdChoice';
 import { mdChoicesCategories, mdChoicesProducts } from 'pages/main/data';
 import { StyledTitle } from 'styles/mainStyles'
 
 export function MdChoiceSection() {
-  const [state, setState] = useState('');
+  const count = useSelector((state: RootState) => state.main.code)
+  const dispatch = useDispatch()
 
   function handleClick(code: string) {
-    setState(code)
+    dispatch(filter(code));
   }
 
   return (
@@ -16,11 +19,11 @@ export function MdChoiceSection() {
       <StyledTitle>MD의 추천</StyledTitle>
       <MdChoiceCategory
         category={mdChoicesCategories}
-        selectedCode={state}
+        selectedCode={count}
         onClick={handleClick}
       />
       <MdChoiceList
-        selectedCode={state}
+        selectedCode={count}
         slides={mdChoicesProducts}
       />
     </>
