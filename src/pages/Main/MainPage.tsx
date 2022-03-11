@@ -1,4 +1,4 @@
-import Slider from '../../components/slider';
+import { Slider } from '../../components/main/mainBanner';
 import { mainBannerFixture } from './data';
 import { StyledMainBanner } from '../../styles/mainStyles';
 
