@@ -12,7 +12,7 @@ interface Props {
   slides: Pick<MainBanner, 'data'>;
 }
 
-export function Slider({ slides }: Props) {
+export function MainBannerSlider({ slides }: Props) {
   return (
     <Swiper
       loop={true}

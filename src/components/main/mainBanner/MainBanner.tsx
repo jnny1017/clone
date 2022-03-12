@@ -1,11 +1,11 @@
-import { Slider } from 'components/main/mainBanner/Slider';
+import { MainBannerSlider } from 'components/main/mainBanner/MainBannerSlider';
 import { mainBannerData } from 'pages/main/data';
 import * as S from 'styles/mainStyles'
 
 export function MainBanner() {
   return (
     <S.MainBanner>
-      <Slider
+      <MainBannerSlider
         slides={mainBannerData}
       />
     </S.MainBanner>
