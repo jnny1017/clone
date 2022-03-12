@@ -1,12 +1,16 @@
+import { useSelector } from 'react-redux'
+
+import { RootState } from 'store'
 import { Category } from 'pages/main/models'
 import * as S from 'styles/mainStyles'
 
 interface Props {
   data: Category[],
-  selectedCode: string,
   onClick: (code: string) => void,
 }
-export function MdChoiceCategory({ data, selectedCode, onClick }: Props) {
+export function MdChoiceCategory({ data, onClick }: Props) {
+  const { code } = useSelector((state: RootState) => state.main)
+
   return (
     <S.Category>
       {data.map((item) => {
@@ -16,7 +20,7 @@ export function MdChoiceCategory({ data, selectedCode, onClick }: Props) {
             onClick={() => onClick(item.code)}
           >
             <S.CategoryLink
-              selected={selectedCode === item.code}
+              selected={code === item.code}
               href="#none"
             >
               {item.name}

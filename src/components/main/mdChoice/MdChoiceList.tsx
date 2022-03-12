@@ -13,7 +13,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 interface Props {
-  selectedCode: string,
   data: Product[],
 }
 

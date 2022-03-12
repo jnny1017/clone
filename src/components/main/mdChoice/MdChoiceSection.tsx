@@ -7,7 +7,6 @@ import { mdChoicesCategoriesData, mdChoicesProductsData } from 'pages/main/data'
 import * as S from 'styles/mainStyles'
 
 export function MdChoiceSection() {
-  const { code } = useSelector((state: RootState) => state.main)
   const dispatch = useDispatch()
 
   function handleClick(code: string) {
@@ -19,11 +18,9 @@ export function MdChoiceSection() {
       <S.Title>MD의 추천</S.Title>
       <MdChoiceCategory
         data={mdChoicesCategoriesData}
-        selectedCode={code}
         onClick={handleClick}
       />
       <MdChoiceList
-        selectedCode={code}
         data={mdChoicesProductsData}
       />
     </>
