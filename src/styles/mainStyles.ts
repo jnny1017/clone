@@ -1,30 +1,25 @@
 import styled from 'styled-components';
 
-export const StyledMainBanner = styled.div`
+export const MainBanner = styled.div`
   //TODO
 `;
 
-export const StyledMain = styled.div`
+export const Main = styled.div`
   width: 1050px;
   margin: 72px auto 0;
 `;
 
-export const StyledSlide = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const StyledCategory = styled.ul`
+export const Category = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 `;
 
-export const StyledCategoryItem = styled.li`
+export const CategoryItem = styled.li`
 
 `;
 
-export const StyledCategoryLink = styled.a<{ selected: boolean }>`
+export const CategoryLink = styled.a<{ selected: boolean }>`
   display: block;
   padding: 10px 20px;
   border-radius: 22px;
@@ -37,7 +32,7 @@ export const StyledCategoryLink = styled.a<{ selected: boolean }>`
   white-space: nowrap;
 `;
 
-export const StyledTitle = styled.h1`
+export const Title = styled.h1`
   display: flex;
   margin-bottom: 27px;
   justify-content: center;

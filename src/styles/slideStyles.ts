@@ -1,13 +1,18 @@
 import styled from 'styled-components';
 
-export const StyledThumbnail = styled.img`
+export const Slide = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Thumbnail = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.3s ease-in-out 0s;
 `;
 
-export const StyledName = styled.div`
+export const Name = styled.div`
   display: -webkit-box;
   overflow: hidden;
   margin-bottom: 8px;
@@ -23,7 +28,7 @@ export const StyledName = styled.div`
   overflow-wrap: break-word;
 `;
 
-export const StyledPrice = styled.div`
+export const Price = styled.div`
   color: #999999;
     font-size: 14px;
     font-weight: 400;
@@ -32,7 +37,7 @@ export const StyledPrice = styled.div`
     margin-top: 2px;
 `;
 
-export const StyledDiscount = styled.span`
+export const Discount = styled.span`
   color: #fa622f;
   font-size: 16px;
   font-weight: 800;
@@ -42,7 +47,7 @@ export const StyledDiscount = styled.span`
 }
 `;
 
-export const StyledDiscountPrice = styled.span`
+export const DiscountPrice = styled.span`
   color: #333333;
     font-size: 16px;
     font-weight: 800;

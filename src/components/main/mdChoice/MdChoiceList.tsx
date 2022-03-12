@@ -7,8 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 import { Product } from 'pages/main/models'
-import { StyledSlide } from 'styles/mainStyles'
-import { StyledThumbnail, StyledName, StyledPrice, StyledDiscount, StyledDiscountPrice } from 'styles/slideStyles'
+import * as S from 'styles/slideStyles'
 
 interface Props {
   selectedCode: string,
@@ -27,20 +26,20 @@ export function MdChoiceList({ slides, selectedCode }: Props) {
         <SwiperSlide
           key={index}
         >
-          <StyledSlide>
-            <StyledThumbnail src={slide.list_image_url} alt="md의 추천 상품" />
-            <StyledName>{slide.name}</StyledName>
+          <S.Slide>
+            <S.Thumbnail src={slide.list_image_url} alt="md의 추천 상품" />
+            <S.Name>{slide.name}</S.Name>
             {slide.discount_rate !== 0 ?
               <>
                 <div>
-                  <StyledDiscount>{slide.discount_rate}%</StyledDiscount>
-                  <StyledDiscountPrice>{slide.discounted_price}원</StyledDiscountPrice>
+                  <S.Discount>{slide.discount_rate}%</S.Discount>
+                  <S.DiscountPrice>{slide.discounted_price}원</S.DiscountPrice>
                 </div>
-                <StyledPrice>{slide.original_price}원</StyledPrice>
+                <S.Price>{slide.original_price}원</S.Price>
               </>
-              : <StyledDiscountPrice>{slide.original_price}원</StyledDiscountPrice>
+              : <S.DiscountPrice>{slide.original_price}원</S.DiscountPrice>
             }
-          </StyledSlide>
+          </S.Slide>
         </SwiperSlide>
       ))
       }

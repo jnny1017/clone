@@ -4,7 +4,7 @@ import { filter } from 'mainSlice'
 
 import { MdChoiceCategory, MdChoiceList } from 'components/main/mdChoice';
 import { mdChoicesCategoriesData, mdChoicesProductsData } from 'pages/main/data';
-import { StyledTitle } from 'styles/mainStyles'
+import * as S from 'styles/mainStyles'
 
 export function MdChoiceSection() {
   const count = useSelector((state: RootState) => state.main.code)
@@ -16,7 +16,7 @@ export function MdChoiceSection() {
 
   return (
     <>
-      <StyledTitle>MD의 추천</StyledTitle>
+      <S.Title>MD의 추천</S.Title>
       <MdChoiceCategory
         category={mdChoicesCategoriesData}
         selectedCode={count}
