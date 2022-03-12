@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import { COLORS } from 'styles/colorStyles';
+
 export const MainBanner = styled.div`
   //TODO
 `;
@@ -16,7 +18,6 @@ export const Category = styled.ul`
 `;
 
 export const CategoryItem = styled.li`
-
 `;
 
 export const CategoryLink = styled.a<{ selected: boolean }>`
@@ -42,6 +43,6 @@ export const Title = styled.h1`
   align-items: center;
   font-size: 28px;
   font-weight: 600;
-  color: #333;
+  color: ${COLORS.black};
   letter-spacing: -0.26px;
 `;

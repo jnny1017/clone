@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { COLORS } from 'styles/colorStyles';
+
 export const Slide = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,32 +15,29 @@ export const Thumbnail = styled.img`
 `;
 
 export const Name = styled.div`
-  display: -webkit-box;
   overflow: hidden;
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.45;
-  color: #333;
+  color: ${COLORS.black};
   text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   letter-spacing: normal;
   word-break: break-all;
   overflow-wrap: break-word;
 `;
 
 export const Price = styled.div`
-  color: #999999;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: line-through;
-    margin-top: 2px;
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+  margin-top: 2px;
 `;
 
 export const Discount = styled.span`
-  color: #fa622f;
+  color: ${COLORS.orange};
   font-size: 16px;
   font-weight: 800;
   line-height: 1.5;
@@ -48,9 +47,9 @@ export const Discount = styled.span`
 `;
 
 export const DiscountPrice = styled.span`
-  color: #333333;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 1.5;
-    white-space: nowrap;
+  color: ${COLORS.black};
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.5;
+  white-space: nowrap;
 `;
