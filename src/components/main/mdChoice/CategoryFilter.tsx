@@ -1,18 +1,20 @@
 import { useSelector } from 'react-redux'
 
 import { RootState } from 'store'
+import { Category } from 'pages/main/models'
 import * as S from 'styles/mainStyles'
-import { mdChoicesCategoriesData } from 'pages/main/data';
 
 interface Props {
+  data: Category[];
   onClick: (code: string) => void,
 }
-export function MdChoiceCategory({ onClick }: Props) {
+
+export function CategoryFilter({ data, onClick }: Props) {
   const { code } = useSelector((state: RootState) => state.main)
 
   return (
     <S.Category>
-      {mdChoicesCategoriesData.map((item) => {
+      {data.map((item:any) => {
         return (
           <S.CategoryItem
             key={item.code}

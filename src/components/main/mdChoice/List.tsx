@@ -2,11 +2,13 @@ import { useSelector } from 'react-redux'
 
 import { RootState } from 'store'
 import { Slider } from 'components/slider'
-import { mdChoicesProductsData } from 'pages/main/data';
+import { Product } from 'pages/main/models';
 
-export function MdChoiceList() {
-  const data = mdChoicesProductsData;
+interface Props {
+  data: Product[];
+}
 
+export function List({ data }: Props) {
   const filteredList = useSelector((state: RootState) => {
     const { code } = state.main;
 
