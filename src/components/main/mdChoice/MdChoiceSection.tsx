@@ -3,7 +3,7 @@ import { RootState } from 'store'
 import { filter } from 'mainSlice'
 
 import { MdChoiceCategory, MdChoiceList } from 'components/main/mdChoice';
-import { mdChoicesCategories, mdChoicesProducts } from 'pages/main/data';
+import { mdChoicesCategoriesData, mdChoicesProductsData } from 'pages/main/data';
 import { StyledTitle } from 'styles/mainStyles'
 
 export function MdChoiceSection() {
@@ -18,13 +18,13 @@ export function MdChoiceSection() {
     <>
       <StyledTitle>MD의 추천</StyledTitle>
       <MdChoiceCategory
-        category={mdChoicesCategories}
+        category={mdChoicesCategoriesData}
         selectedCode={count}
         onClick={handleClick}
       />
       <MdChoiceList
         selectedCode={count}
-        slides={mdChoicesProducts}
+        slides={mdChoicesProductsData}
       />
     </>
   )

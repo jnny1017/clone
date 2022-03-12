@@ -1,4 +1,4 @@
-export const mainBannerFixture = {
+export const mainBannerData = {
     "id": 31,
     "title": "",
     "subtitle": "",
