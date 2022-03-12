@@ -1,20 +1,29 @@
+import { useSelector } from 'react-redux'
+
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { RootState } from 'store'
+import { Product } from 'pages/main/models'
+import * as S from 'styles/slideStyles'
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import { Product } from 'pages/main/models'
-import * as S from 'styles/slideStyles'
-
 interface Props {
   selectedCode: string,
-  slides: Product[],
+  data: Product[],
 }
 
-export function MdChoiceList({ slides, selectedCode }: Props) {
+export function MdChoiceList({ data }: Props) {
+  const filteredList = useSelector((state: RootState) => {
+    const { code } = state.main;
+
+    return data.filter(item => item.code === code);
+  });
+
   return (
     <Swiper
       slidesPerView={4}
@@ -22,7 +31,7 @@ export function MdChoiceList({ slides, selectedCode }: Props) {
       navigation={true}
       modules={[Navigation]}
     >
-      {slides.filter((slide) => slide.code.includes(selectedCode)).map((slide, index) => (
+      {filteredList.map((slide, index) => (
         <SwiperSlide
           key={index}
         >

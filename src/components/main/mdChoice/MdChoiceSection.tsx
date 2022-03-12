@@ -23,8 +23,8 @@ export function MdChoiceSection() {
         onClick={handleClick}
       />
       <MdChoiceList
-        selectedCode={count}
-        slides={mdChoicesProductsData}
+        selectedCode={code}
+        data={mdChoicesProductsData}
       />
     </>
   )
