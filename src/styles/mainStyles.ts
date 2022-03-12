@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const MainBanner = styled.div`
   //TODO
@@ -27,9 +27,12 @@ export const CategoryLink = styled.a<{ selected: boolean }>`
   font-size: 14px;
   height: 40px;
   line-height: 16px;
-  background-color:${({ selected }) => selected ? '#5f0080;' : '#f7f7f7'};
-  color:${({selected}) => selected ? '#fff;' : '#333'};
-  white-space: nowrap;
+  background-color: #f7f7f7;
+  color: ${COLORS.black};
+  ${({selected}) => selected && css`
+    background-color: ${COLORS.purple};
+    color: ${COLORS.white};
+  `}
 `;
 
 export const Title = styled.h1`
