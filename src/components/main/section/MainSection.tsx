@@ -1,15 +1,18 @@
-import { Slider } from 'components/slider'
 import * as S from 'styles/mainStyles'
 
-export default function MainSection({ data }: any) {
-  const { title, subtitle, data: { products } } = data;
+interface Props {
+  title: string;
+  subtitle?: string;
+  children: any;
+}
 
+export default function MainSection({ title, subtitle, children }: Props) {
   return (
     <S.Section>
       <S.Title>{title}</S.Title>
       <S.SubTitle>{subtitle}</S.SubTitle>
       <S.Inner>
-        <Slider data={products} />
+        {children}
       </S.Inner>
     </S.Section>
   )
