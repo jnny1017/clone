@@ -273,3 +273,499 @@ export const RandomCollectionData = {
       ]
   }
 }
+
+export const RandomCollectionData2 = {
+    "id": 27,
+    "title": "지금 가장 핫한 상품",
+    "subtitle": "",
+    "additional_text": null,
+    "template_code": "random_collection",
+    "template_type": "random_collection",
+    "event_code": "random_collection",
+    "data": {
+        "collection_code": "1202nowhot",
+        "has_more": true,
+        "products": [
+            {
+                "no": 110086,
+                "name": "[모두의맛집] 숯불 대창파스타",
+                "short_description": "불 향 가득한 매콤 파스타",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1643178960414l0.jpg",
+                "original_price": 19900,
+                "discounted_price": 19900,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 3
+                }
+            },
+            {
+                "no": 100788,
+                "name": "[마켓컬리 X 마이셰프] 소고기 샤브샤브 밀키트 3~4인분(고기350g)",
+                "short_description": "소고기가 푸짐한 대용량 구성",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1639378086754l0.jpg",
+                "original_price": 21900,
+                "discounted_price": 19710,
+                "discount_rate": 10,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": true,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [
+                    {
+                        "name": "Kurly Only",
+                        "type": "kurlyonly"
+                    }
+                ],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 4
+                }
+            },
+            {
+                "no": 56046,
+                "name": "[슬림쿡] 프레쉬 샐러드 5종",
+                "short_description": "합리적으로 즐기는 신선한 한 끼",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1597224450861l0.jpg",
+                "original_price": 5500,
+                "discounted_price": 5225,
+                "discount_rate": 5,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [
+                    {
+                        "name": "Kurly Only",
+                        "type": "kurlyonly"
+                    }
+                ],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 6
+                }
+            },
+            {
+                "no": 79414,
+                "name": "[금미옥] 국물 떡볶이",
+                "short_description": "달큰한 추억의 맛이 새록새록",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1627953762480l0.jpg",
+                "original_price": 4900,
+                "discounted_price": 3920,
+                "discount_rate": 20,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": true,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [
+                    {
+                        "name": "Kurly Only",
+                        "type": "kurlyonly"
+                    }
+                ],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 7
+                }
+            },
+            {
+                "no": 106676,
+                "name": "[스윗밸런스] 오늘의 랩 샌드위치 5종",
+                "short_description": "간편하게 챙기는 건강한 한 끼 ",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1643346170234l0.jpg",
+                "original_price": 3900,
+                "discounted_price": 3120,
+                "discount_rate": 20,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [
+                    {
+                        "name": "Kurly Only",
+                        "type": "kurlyonly"
+                    }
+                ],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 8
+                }
+            },
+            {
+                "no": 42318,
+                "name": "[쉐푸드] B.E.L.T 샌드위치 & 닭가슴살 흑임자 샌드위치",
+                "short_description": "풍성함과 신선함을 모두 담은 샌드위치",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1572324205916l0.jpg",
+                "original_price": 3900,
+                "discounted_price": 3900,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 9
+                }
+            },
+            {
+                "no": 106659,
+                "name": "[나인웨어] 모노 휴대용 수저세트 2종",
+                "short_description": "도시락 가방에 쏙 넣어다니기 좋은",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1641883140671l0.jpg",
+                "original_price": 12900,
+                "discounted_price": 12900,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 10
+                }
+            },
+            {
+                "no": 66900,
+                "name": "[젤리캣] 버니 8종 (M,L사이즈)",
+                "short_description": "부드럽고 포근한 토끼 애착 인형",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1612163634599l0.jpg",
+                "original_price": 44500,
+                "discounted_price": 44500,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 11
+                }
+            },
+            {
+                "no": 72797,
+                "name": "[홍루이젠] 에그마요 샌드위치 2종",
+                "short_description": "부드러운 샐러드가 듬뿍",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1620979999123l0.jpg",
+                "original_price": 3000,
+                "discounted_price": 3000,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 12
+                }
+            },
+            {
+                "no": 110087,
+                "name": "[모두의맛집] 곱창 치즈파스타",
+                "short_description": "한식을 접목한 로제 파스타",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1643179096124l0.jpg",
+                "original_price": 19900,
+                "discounted_price": 19900,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 14
+                }
+            },
+            {
+                "no": 61283,
+                "name": "[Kurly's] 휴대용 물티슈 2종",
+                "short_description": "외출 시에도 간편하게 사용하는",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1619597629136l0.jpg",
+                "original_price": 690,
+                "discounted_price": 607,
+                "discount_rate": 12,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [
+                    {
+                        "name": "Kurly Only",
+                        "type": "kurlyonly"
+                    }
+                ],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 16
+                }
+            },
+            {
+                "no": 54074,
+                "name": "[우주] 프리미엄 손질 생새우살 200g (냉동)",
+                "short_description": "두루 사용하기 좋은 간편 새우",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1637921389796l0.jpg",
+                "original_price": 8400,
+                "discounted_price": 8400,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": true,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [
+                    {
+                        "name": "Kurly Only",
+                        "type": "kurlyonly"
+                    }
+                ],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 18
+                }
+            },
+            {
+                "no": 26865,
+                "name": "[어부네] 동해 백골뱅이 700g (냉동)",
+                "short_description": "쏙 빼내어 즐기는 쯜깃함 ",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1530604213924l0.jpg",
+                "original_price": 22600,
+                "discounted_price": 22600,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 20
+                }
+            },
+            {
+                "no": 86477,
+                "name": "[탁촌장] 안동참마 모나카 (5개입)",
+                "short_description": "엄선한 재료로 만든 추억의 간식",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1631855456615l0.jpg",
+                "original_price": 4900,
+                "discounted_price": 4900,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [
+                    {
+                        "name": "Kurly Only",
+                        "type": "kurlyonly"
+                    }
+                ],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 21
+                }
+            },
+            {
+                "no": 34152,
+                "name": "[매일] 소화가 잘되는 우유 930mL 2종",
+                "short_description": "유당은 제거하고 칼슘은 높인",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1563786577222l0.jpg",
+                "original_price": 3290,
+                "discounted_price": 3290,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "매주 일~목 23시 이후 입고 예정",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 22
+                }
+            },
+            {
+                "no": 49044,
+                "name": "[하우키즈풀] 보틀백 4종",
+                "short_description": "500mL 물병이 쏙 들어가는 크기",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1581923119464l0.jpg",
+                "original_price": 21500,
+                "discounted_price": 21500,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 24
+                }
+            },
+            {
+                "no": 78346,
+                "name": "[가농바이오] 비타플러스에그 무항생제 1+등급 대란 10구",
+                "short_description": "1구 당 판매가 :  399원",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1626769461370l0.jpg",
+                "original_price": 3990,
+                "discounted_price": 3990,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [
+                    {
+                        "name": "Kurly Only",
+                        "type": "kurlyonly"
+                    }
+                ],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 25
+                }
+            },
+            {
+                "no": 27531,
+                "name": "[성지농장] 동물복지 한돈 삼겹살 2종 (냉장)",
+                "short_description": "구이용/수육용 (100g 당 판매가 : 4,400원/4,180원)",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1637923196451l0.jpg",
+                "original_price": 13200,
+                "discounted_price": 13200,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "매주 일,화,목 23시 이후 입고 예정",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 26
+                }
+            },
+            {
+                "no": 71126,
+                "name": "[프랑코] EVA 항균 층간소음 방지 실내화 4종",
+                "short_description": "조용하고 폭신한 걸음",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1637921761382l0.jpeg",
+                "original_price": 9900,
+                "discounted_price": 8415,
+                "discount_rate": 15,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 27
+                }
+            },
+            {
+                "no": 73858,
+                "name": "[해초미인] 슬림 다시마면 (비빔소스 증정)",
+                "short_description": "칼로리 부담 없는 면",
+                "list_image_url": "https://img-cf.kurly.com/shop/data/goods/162216765414l0.jpg",
+                "original_price": 1990,
+                "discounted_price": 1990,
+                "discount_rate": 0,
+                "is_buy_now": false,
+                "is_purchase_status": true,
+                "is_giftable": false,
+                "is_sold_out": false,
+                "sold_out_title": "Coming Soon",
+                "sold_out_text": "",
+                "can_restock_notify": true,
+                "tags": [],
+                "sticker": null,
+                "meta": {
+                    "is_fixed": false,
+                    "position": 31
+                }
+            }
+        ]
+    }
+}

@@ -2,10 +2,6 @@ import styled, { css } from 'styled-components';
 
 import { COLORS } from 'styles/colorStyles';
 
-export const MainBanner = styled.div`
-  //TODO
-`;
-
 export const Main = styled.div`
   width: 1050px;
   margin: 72px auto 0;
@@ -45,4 +41,20 @@ export const Title = styled.h1`
   font-weight: 600;
   color: ${COLORS.black};
   letter-spacing: -0.26px;
+`;
+
+export const SubTitle = styled.h1`
+  margin-top: 2px;
+  font-size: 16px;
+  color: #999999;
+  letter-spacing: -0.2px;
+  text-align: center;
+`;
+
+export const Section = styled.h1`
+  margin-top: 72px;
+`;
+
+export const Inner = styled.h1`
+  margin-top: 22px;
 `;
