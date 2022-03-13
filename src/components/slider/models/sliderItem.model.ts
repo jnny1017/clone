@@ -1,10 +1,4 @@
-export interface Category {
-  code: string,
-  name?: string,
-}
-
-// TODO 네이밍 생각해보기
-export interface Product {
+export interface SliderItemModel {
   code: string,
   no?: number,
   name: string,
@@ -16,13 +10,12 @@ export interface Product {
   is_sold_out?: boolean,
   sold_out_title?: string,
   sold_out_text?: string,
-  sticker?: ProductSticker | null
+  sticker?: Sticker | null
 }
 
-// TODO content.weight에 넣으면 왜 에러가 날까?
 type FontWeight = "regular" | "bold";
 
-export interface ProductSticker {
+export interface Sticker {
   content: {
     text: string,
     weight: string,

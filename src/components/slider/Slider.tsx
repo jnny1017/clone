@@ -1,7 +1,7 @@
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Product } from 'pages/main/models'
+import { SliderItemModel } from './models';
 import * as S from 'styles/slideStyles'
 
 import 'swiper/css';
@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 interface Props {
-  data: Product[],
+  data: SliderItemModel[],
 }
 
 export function Slider({ data }: Props) {
