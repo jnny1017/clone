@@ -1,7 +1,6 @@
 import { MainBanner } from 'components/main/mainBanner';
 import { MdChoiceSection } from 'components/main/mdChoice';
-import { CollectionSection } from 'components/main/randomCollection';
-import React from 'react';
+import { CollectionSectionContainer } from 'components/main/randomCollection';
 import * as S from 'styles/mainStyles';
 
 export default function MainPage() {
@@ -10,7 +9,7 @@ export default function MainPage() {
       <MainBanner />
       <S.Main>
         <MdChoiceSection />
-        <CollectionSection />
+        <CollectionSectionContainer />
       </S.Main>
     </>
   );
