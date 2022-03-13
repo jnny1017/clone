@@ -5,7 +5,7 @@ import { CategoryFilter, List } from 'components/main/mdChoice';
 import { mdChoicesCategoriesData, mdChoicesProductsData } from 'pages/main/data';
 import * as S from 'styles/mainStyles'
 
-export function Section() {
+export function MdChoiceSection() {
   const dispatch = useDispatch();
 
   function handleClick(code: string) {

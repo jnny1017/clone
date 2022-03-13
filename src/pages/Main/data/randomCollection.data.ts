@@ -1,4 +1,4 @@
-export const RandomCollectionData = {
+export const randomCollectionData = {
   "id": 12,
   "title": "오늘의 신상품 TOP50",
   "subtitle": "출시 2주만에 1171개 판매된 신상품은?",
@@ -274,7 +274,7 @@ export const RandomCollectionData = {
   }
 }
 
-export const RandomCollectionData2 = {
+export const randomCollectionData2 = {
     "id": 27,
     "title": "지금 가장 핫한 상품",
     "subtitle": "",

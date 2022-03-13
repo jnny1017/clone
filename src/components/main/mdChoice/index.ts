@@ -1,3 +1,3 @@
 export * from './List';
-export * from './Section';
+export * from './mdChoiceSection';
 export * from './CategoryFilter';

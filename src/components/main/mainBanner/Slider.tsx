@@ -1,4 +1,4 @@
-import { Navigation, Pagination, Autoplay } from 'swiper';
+import { Lazy, Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -12,16 +12,17 @@ interface Props {
   slides: Pick<MainBanner, 'data'>;
 }
 
-export function MainBannerSlider({ slides }: Props) {
+export function Slider({ slides }: Props) {
   return (
     <Swiper
+      lazy={true}
       loop={true}
       autoplay={{ delay: 2000 }}
       pagination={{
         type: "fraction",
       }}
       navigation={true}
-      modules={[Pagination, Navigation, Autoplay]}
+      modules={[Lazy, Pagination, Navigation, Autoplay]}
     >
       {slides.data.map(({ id, image_url }, index) => (
         <SwiperSlide
