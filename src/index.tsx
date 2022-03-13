@@ -7,12 +7,10 @@ import App from 'App';
 import { store } from 'store'
 
 ReactDOM.render(
-  <StrictMode>
+  <Provider store={store}>
     <Router>
-      <Provider store={store}>
-        <App />
-      </Provider>,
-    </Router>
-  </StrictMode>,
+      <App />
+    </Router>,
+    </Provider>,
   document.getElementById('root')
 );
