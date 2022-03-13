@@ -5,7 +5,7 @@ export interface Category {
 
 // TODO 네이밍 생각해보기
 export interface Product {
-  code: string,
+  code?: string,
   no?: number,
   name: string,
   short_description?: string,
