@@ -1,6 +1,4 @@
-import { useSelector } from 'react-redux'
-
-import { useAppSelector } from 'store'
+import { useAppSelector } from 'store/store'
 import { Slider } from 'components/slider'
 import { Product } from 'pages/main/models';
 

@@ -1,9 +1,6 @@
-import { useSelector } from 'react-redux'
-
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { RootState } from 'store'
 import { Product } from 'pages/main/models'
 import * as S from 'styles/slideStyles'
 

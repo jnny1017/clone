@@ -1,6 +1,4 @@
-import { useSelector } from 'react-redux'
-
-import { useAppSelector } from 'store'
+import { useAppSelector } from 'store/store'
 import { Category } from 'pages/main/models'
 import * as S from 'styles/mainStyles'
 

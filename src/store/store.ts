@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import mainReducer from 'mainSlice'
+import mainReducer from 'store/mainSlice'
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
 const rootReducers = {
