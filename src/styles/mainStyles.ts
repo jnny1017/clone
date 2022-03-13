@@ -32,7 +32,7 @@ export const CategoryLink = styled.a<{ selected: boolean }>`
   `}
 `;
 
-export const Title = styled.h1`
+export const Title = styled.p`
   display: flex;
   margin-bottom: 27px;
   justify-content: center;
@@ -43,7 +43,7 @@ export const Title = styled.h1`
   letter-spacing: -0.26px;
 `;
 
-export const SubTitle = styled.h1`
+export const SubTitle = styled.p`
   margin-top: 2px;
   font-size: 16px;
   color: #999999;
@@ -51,10 +51,10 @@ export const SubTitle = styled.h1`
   text-align: center;
 `;
 
-export const Section = styled.h1`
+export const Section = styled.div`
   margin-top: 72px;
 `;
 
-export const Inner = styled.h1`
+export const Inner = styled.div`
   margin-top: 22px;
 `;
