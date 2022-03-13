@@ -9,12 +9,12 @@ export const mainSlice = createSlice({
   name: 'main',
   initialState,
   reducers: {
-    selectedCode: (state, action: PayloadAction<string>)  => {
+    updateCode: (state, action: PayloadAction<string>)  => {
       state.code = action.payload
     },
   },
 })
 
-export const { selectedCode } = mainSlice.actions
+export const { updateCode } = mainSlice.actions
 
 export default mainSlice.reducer
