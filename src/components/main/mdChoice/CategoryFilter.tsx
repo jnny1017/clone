@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 
-import { RootState } from 'store'
+import { useAppSelector } from 'store'
 import { Category } from 'pages/main/models'
 import * as S from 'styles/mainStyles'
 
@@ -10,11 +10,11 @@ interface Props {
 }
 
 export function CategoryFilter({ data, onClick }: Props) {
-  const { code } = useSelector((state: RootState) => state.main)
+  const { code } = useAppSelector(state => state.main);
 
   return (
     <S.Category>
-      {data.map((item:any) => {
+      {data.map((item: any) => {
         return (
           <S.CategoryItem
             key={item.code}
