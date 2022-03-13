@@ -1,5 +1,5 @@
 import { MainBanner } from 'components/main/mainBanner';
-import { MdChoiceSection } from 'components/main/mdChoice';
+import { Section } from 'components/main/mdChoice';
 import * as S from 'styles/mainStyles';
 
 export default function MainPage() {
@@ -7,7 +7,7 @@ export default function MainPage() {
     <>
       <MainBanner />
       <S.Main>
-        <MdChoiceSection />
+        <Section />
       </S.Main>
     </>
   );
