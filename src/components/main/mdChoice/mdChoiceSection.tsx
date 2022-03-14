@@ -1,10 +1,11 @@
 import { useDispatch } from 'react-redux'
 
 import { updateCode } from 'store/mainSlice'
+
 import { CategoryFilter } from 'components/main/mdChoice';
 import { mdChoicesCategoriesData, mdChoicesProductsData } from 'pages/main/data';
 import MainSection from 'components/main/section/MainSection';
-import { Slider } from 'components/slider';
+import { List } from 'components/main/mdChoice';
 
 export function MdChoiceSection() {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ export function MdChoiceSection() {
           data={mdChoicesCategoriesData}
           onClick={handleClickCategory}
         />
-        <Slider data={mdChoicesProductsData} />
+        <List data={mdChoicesProductsData} />
       </MainSection>
     </>
   )
