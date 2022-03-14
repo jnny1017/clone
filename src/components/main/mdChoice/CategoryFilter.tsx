@@ -8,21 +8,21 @@ interface Props {
 }
 
 export function CategoryFilter({ data, onClick }: Props) {
-  const { code } = useAppSelector(state => state.main);
+  const selectedCode = useAppSelector(state => state.main.code);
 
   return (
     <S.Category>
-      {data.map((item: any) => {
+      {data.map(({ code, name }) => {
         return (
           <S.CategoryItem
-            key={item.code}
-            onClick={() => onClick(item.code)}
+            key={code}
+            onClick={() => onClick(code)}
           >
             <S.CategoryLink
-              selected={code === item.code}
+              selected={selectedCode === code}
               href="#none"
             >
-              {item.name}
+              {name}
             </S.CategoryLink>
           </S.CategoryItem>
         )
