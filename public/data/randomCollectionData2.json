@@ -1,280 +1,4 @@
-export const randomCollectionData = {
-  "id": 12,
-  "title": "오늘의 신상품 TOP50",
-  "subtitle": "출시 2주만에 1171개 판매된 신상품은?",
-  "additional_text": null,
-  "template_code": "random_collection",
-  "template_type": "random_collection",
-  "event_code": "random_collection",
-  "data": {
-    "collection_code": "newprd-rank-37ex",
-    "has_more": true,
-    "products": [
-      {
-        "no": 119903,
-        "name": "[KF365] 1+등급 무항생제 대란 20구",
-        "short_description": "1구 당 판매가 :  335원",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1646377916155l0.jpg",
-        "original_price": 6700,
-        "discounted_price": 6231,
-        "discount_rate": 7,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 103617,
-        "name": "[KF365] 1+ 한우 국거리 300g(냉장)",
-        "short_description": "100g당 판매가 : 5,900원",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645492554545l0.jpg",
-        "original_price": 17700,
-        "discounted_price": 16461,
-        "discount_rate": 7,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 119904,
-        "name": "[KF365] 1+등급 무항생제 대란 10구",
-        "short_description": "1구 당 판매가 :  360원",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1646377893502l0.jpg",
-        "original_price": 3600,
-        "discounted_price": 3240,
-        "discount_rate": 10,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 98736,
-        "name": "MY FIRST 처음 만나는 카스텔라",
-        "short_description": "무항생제 달걀로 완성한 고소함",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645522057251l0.jpg",
-        "original_price": 6900,
-        "discounted_price": 6210,
-        "discount_rate": 10,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 116351,
-        "name": "[KF365] 종이컵 3종",
-        "short_description": "로고 없는 깔끔한 종이컵",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645414366131l0.jpg",
-        "original_price": 635,
-        "discounted_price": 590,
-        "discount_rate": 7,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 118702,
-        "name": "[해태] 오예스 딸기 치즈 케이크 12입",
-        "short_description": "봄 시즌 한정으로 선보이는",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/164620559319l0.jpg",
-        "original_price": 4780,
-        "discounted_price": 4780,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 113140,
-        "name": "[모노키친] 롱롱 생선까스 (소스증정)",
-        "short_description": "타르타르 소스를 만난 스틱 까스",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/164567702525l0.jpg",
-        "original_price": 5900,
-        "discounted_price": 5310,
-        "discount_rate": 10,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 118700,
-        "name": "[오리온] 딸기 송이 144g",
-        "short_description": "봄처럼 화사한 딸기 모자",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/164619942435l0.jpg",
-        "original_price": 2240,
-        "discounted_price": 2240,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 118059,
-        "name": "[롯데제과] 꼬깔콘 시리즈 3종",
-        "short_description": "고소한 꼬깔 모양 스낵",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645592871283l0.jpg",
-        "original_price": 2380,
-        "discounted_price": 2380,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 115289,
-        "name": "[노포명가] 제주클래식 시즈닝 돈목심 스테이크 250g",
-        "short_description": "100g당 가격: 4,360원",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1646032606102l0.jpg",
-        "original_price": 10900,
-        "discounted_price": 9810,
-        "discount_rate": 10,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 116418,
-        "name": "[샐러딩] 시저 샐러드",
-        "short_description": "녹진한 소스를 입은 닭가슴살",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645166337721l0.jpg",
-        "original_price": 7000,
-        "discounted_price": 7000,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 118698,
-        "name": "[롯데제과] 빼빼로 딸기 37g",
-        "short_description": "봄의 상큼함을 입은 빼빼로",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1646210218193l0.jpg",
-        "original_price": 1180,
-        "discounted_price": 1180,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 113009,
-        "name": "[서울우유] 쿠킹크림 200mL",
-        "short_description": "국산 유크림과 원유를 배합한",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1644310007360l0.jpg",
-        "original_price": 2310,
-        "discounted_price": 2310,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 114922,
-        "name": "[웨신] 메쉬스펀지 2개입 (컬리기획)",
-        "short_description": "풍성한 거품을 만드는 욕실 스펀지",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645421746284l0.jpg",
-        "original_price": 5000,
-        "discounted_price": 3600,
-        "discount_rate": 28,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 118058,
-        "name": "[롯데제과] 오잉포차 꾸이오잉칩 100g",
-        "short_description": "짭조롬한 고단백 안주 스낵 ",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645598669640l0.jpg",
-        "original_price": 1980,
-        "discounted_price": 1980,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 99364,
-        "name": "[Kurly's] 사이잘 수세미 4입",
-        "short_description": "컬리가 만든 천연 소재 수세미",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645520580230l0.jpg",
-        "original_price": 2900,
-        "discounted_price": 2610,
-        "discount_rate": 10,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 118801,
-        "name": "[미식당] 모듬 꼬치",
-        "short_description": "6가지 꼬치를 한 번에",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645782669420l0.jpg",
-        "original_price": 14980,
-        "discounted_price": 14980,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 115285,
-        "name": "서해안 명품관자 슬라이스 200g (냉동)",
-        "short_description": "한 점 한 점 풍부한 감칠맛",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1645511097373l0.jpg",
-        "original_price": 15800,
-        "discounted_price": 15800,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 115211,
-        "name": "[라라스윗] 생우유 모나카 (140ml * 4개입)",
-        "short_description": "오롯이 담은 우유의 고소함",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/164507401644l0.jpg",
-        "original_price": 9400,
-        "discounted_price": 9400,
-        "discount_rate": 0,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-      {
-        "no": 105527,
-        "name": "[악소] 햄치즈 브뢰첸 샌드위치 (1개입)",
-        "short_description": "매일 먹기 좋은 담백함",
-        "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1644985378270l0.jpg",
-        "original_price": 4000,
-        "discounted_price": 3200,
-        "discount_rate": 20,
-        "is_sold_out": false,
-        "sold_out_title": "Coming Soon",
-        "sold_out_text": "",
-        "sticker": null,
-      },
-    ],
-  },
-}
-
-export const randomCollectionData2 = {
+{
   "id": 27,
   "title": "지금 가장 핫한 상품",
   "subtitle": "",
@@ -305,8 +29,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 3,
-        },
+          "position": 3
+        }
       },
       {
         "no": 100788,
@@ -326,14 +50,14 @@ export const randomCollectionData2 = {
         "tags": [
           {
             "name": "Kurly Only",
-            "type": "kurlyonly",
-          },
+            "type": "kurlyonly"
+          }
         ],
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 4,
-        },
+          "position": 4
+        }
       },
       {
         "no": 56046,
@@ -353,14 +77,14 @@ export const randomCollectionData2 = {
         "tags": [
           {
             "name": "Kurly Only",
-            "type": "kurlyonly",
-          },
+            "type": "kurlyonly"
+          }
         ],
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 6,
-        },
+          "position": 6
+        }
       },
       {
         "no": 79414,
@@ -380,14 +104,14 @@ export const randomCollectionData2 = {
         "tags": [
           {
             "name": "Kurly Only",
-            "type": "kurlyonly",
-          },
+            "type": "kurlyonly"
+          }
         ],
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 7,
-        },
+          "position": 7
+        }
       },
       {
         "no": 106676,
@@ -407,14 +131,14 @@ export const randomCollectionData2 = {
         "tags": [
           {
             "name": "Kurly Only",
-            "type": "kurlyonly",
-          },
+            "type": "kurlyonly"
+          }
         ],
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 8,
-        },
+          "position": 8
+        }
       },
       {
         "no": 42318,
@@ -435,8 +159,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 9,
-        },
+          "position": 9
+        }
       },
       {
         "no": 106659,
@@ -457,8 +181,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 10,
-        },
+          "position": 10
+        }
       },
       {
         "no": 66900,
@@ -479,8 +203,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 11,
-        },
+          "position": 11
+        }
       },
       {
         "no": 72797,
@@ -501,8 +225,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 12,
-        },
+          "position": 12
+        }
       },
       {
         "no": 110087,
@@ -523,8 +247,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 14,
-        },
+          "position": 14
+        }
       },
       {
         "no": 61283,
@@ -544,14 +268,14 @@ export const randomCollectionData2 = {
         "tags": [
           {
             "name": "Kurly Only",
-            "type": "kurlyonly",
-          },
+            "type": "kurlyonly"
+          }
         ],
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 16,
-        },
+          "position": 16
+        }
       },
       {
         "no": 54074,
@@ -571,14 +295,14 @@ export const randomCollectionData2 = {
         "tags": [
           {
             "name": "Kurly Only",
-            "type": "kurlyonly",
-          },
+            "type": "kurlyonly"
+          }
         ],
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 18,
-        },
+          "position": 18
+        }
       },
       {
         "no": 26865,
@@ -599,8 +323,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 20,
-        },
+          "position": 20
+        }
       },
       {
         "no": 86477,
@@ -620,14 +344,14 @@ export const randomCollectionData2 = {
         "tags": [
           {
             "name": "Kurly Only",
-            "type": "kurlyonly",
-          },
+            "type": "kurlyonly"
+          }
         ],
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 21,
-        },
+          "position": 21
+        }
       },
       {
         "no": 34152,
@@ -648,8 +372,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 22,
-        },
+          "position": 22
+        }
       },
       {
         "no": 49044,
@@ -670,8 +394,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 24,
-        },
+          "position": 24
+        }
       },
       {
         "no": 78346,
@@ -691,14 +415,14 @@ export const randomCollectionData2 = {
         "tags": [
           {
             "name": "Kurly Only",
-            "type": "kurlyonly",
-          },
+            "type": "kurlyonly"
+          }
         ],
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 25,
-        },
+          "position": 25
+        }
       },
       {
         "no": 27531,
@@ -719,8 +443,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 26,
-        },
+          "position": 26
+        }
       },
       {
         "no": 71126,
@@ -741,8 +465,8 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 27,
-        },
+          "position": 27
+        }
       },
       {
         "no": 73858,
@@ -763,9 +487,9 @@ export const randomCollectionData2 = {
         "sticker": null,
         "meta": {
           "is_fixed": false,
-          "position": 31,
-        },
-      },
-    ],
-  },
+          "position": 31
+        }
+      }
+    ]
+  }
 }

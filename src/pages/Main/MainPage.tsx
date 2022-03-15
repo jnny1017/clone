@@ -1,15 +1,32 @@
-import { MainBanner } from 'components/main/mainBanner';
-import { MdChoiceSection } from 'components/main/mdChoice';
-import { CollectionSectionContainer } from 'components/main/randomCollection';
+import BannerSlider from 'components/BannerSlider';
 import * as S from 'styles/mainStyles';
+import RandomCollection from './components/RandomCollection/RandomCollection';
+import {
+  mainBannerData,
+  mdChoicesCategoriesData,
+  mdChoicesProductsData,
+} from './data/';
+import PickSection from '../../components/PickSection';
+import { useDispatch } from 'react-redux';
+import { updateCode } from 'store/main/mainSlice';
 
 export default function MainPage() {
+  const dispatch = useDispatch();
+
+  function handleClickCategory(code: string) {
+    dispatch(updateCode(code));
+  }
   return (
     <>
-      <MainBanner />
+      <BannerSlider slides={mainBannerData} />
       <S.Main>
-        <MdChoiceSection />
-        <CollectionSectionContainer />
+        <PickSection
+          title="MD의 추천"
+          categoryData={mdChoicesCategoriesData}
+          productData={mdChoicesProductsData}
+          onClick={handleClickCategory}
+        />
+        <RandomCollection />
       </S.Main>
     </>
   );

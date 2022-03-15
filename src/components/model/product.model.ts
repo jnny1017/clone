@@ -1,10 +1,4 @@
-export interface Category {
-  code: string;
-  name?: string;
-}
-
-// TODO 네이밍 생각해보기
-export interface Product {
+export interface ProductInfo {
   code?: string;
   no?: number;
   name: string;
