@@ -1,24 +1,21 @@
 import { MainBanner } from 'components/main/mainBanner';
 import { MdChoiceSection } from 'components/main/mdChoice';
 import { CollectionSectionContainer } from 'components/main/randomCollection';
-import Lazy from 'components/lazy/LazyComponent'
+import LazyComponent from 'components/lazy'
 import * as S from 'styles/mainStyles';
-import LazyImage from 'components/lazy/LazyImg'
 
 export default function MainPage() {
   return (
     <>
       <MainBanner />
       <S.Main>
-        <Lazy>
+        <LazyComponent>
           <MdChoiceSection />
-        </Lazy>
-        {[...Array(50).keys()].map(i => (
-          <LazyImage
-            key={i}
-            src={`https://picsum.photos/1000/1000?random=${i}`}
-            alt={`Random image ${i}`}
-          />
+        </LazyComponent>
+        {[...Array(5).keys()].map(i => (
+          <LazyComponent key={i}>
+            <CollectionSectionContainer />
+          </LazyComponent>
         ))}
       </S.Main>
     </>
