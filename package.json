@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
-    "@types/react-transition-group": "^4.4.4",
     "axios": "^0.25.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
