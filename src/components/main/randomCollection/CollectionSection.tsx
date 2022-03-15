@@ -1,6 +1,6 @@
 import MainSection from 'components/main/section'
 import { Slider } from 'components/slider';
-import { randomCollectionData, randomCollectionData2 } from 'pages/main/data';
+import { randomCollectionData } from 'pages/main/data';
 import { SectionModel } from '../section/models';
 
 interface Props {

@@ -26,7 +26,7 @@ export const CategoryLink = styled.a<{ selected: boolean }>`
   line-height: 16px;
   background-color: #f7f7f7;
   color: ${COLORS.black};
-  ${({selected}) => selected && css`
+  ${({ selected }) => selected && css`
     background-color: ${COLORS.purple};
     color: ${COLORS.white};
   `}

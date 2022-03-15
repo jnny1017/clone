@@ -6,7 +6,9 @@ const AppRoutes = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (!pathname) return;
+    if (!pathname) {
+      return;
+    }
 
     window.scrollTo(0, 0);
   }, [pathname]);
