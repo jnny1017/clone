@@ -1,80 +1,80 @@
 export const mdChoicesCategoriesData = [
   {
     "code": "772",
-    "name": "선물하기"
+    "name": "선물하기",
   },
   {
     "code": "907",
-    "name": "채소"
+    "name": "채소",
   },
   {
     "code": "908",
-    "name": "과일·견과·쌀"
+    "name": "과일·견과·쌀",
   },
   {
     "code": "909",
-    "name": "수산·해산·건어물"
+    "name": "수산·해산·건어물",
   },
   {
     "code": "910",
-    "name": "정육·계란"
+    "name": "정육·계란",
   },
   {
     "code": "911",
-    "name": "국·반찬·메인요리"
+    "name": "국·반찬·메인요리",
   },
   {
     "code": "912",
-    "name": "샐러드·간편식"
+    "name": "샐러드·간편식",
   },
   {
     "code": "913",
-    "name": "면·양념·오일"
+    "name": "면·양념·오일",
   },
   {
     "code": "914",
-    "name": "생수·음료·우유·커피"
+    "name": "생수·음료·우유·커피",
   },
   {
     "code": "249",
-    "name": "간식·과자·떡"
+    "name": "간식·과자·떡",
   },
   {
     "code": "915",
-    "name": "베이커리·치즈·델리"
+    "name": "베이커리·치즈·델리",
   },
   {
     "code": "032",
-    "name": "건강식품"
+    "name": "건강식품",
   },
   {
     "code": "918",
-    "name": "생활용품·리빙·캠핑"
+    "name": "생활용품·리빙·캠핑",
   },
   {
     "code": "233",
-    "name": "스킨케어·메이크업"
+    "name": "스킨케어·메이크업",
   },
   {
     "code": "012",
-    "name": "헤어·바디·구강"
+    "name": "헤어·바디·구강",
   },
   {
     "code": "916",
-    "name": "주방용품"
+    "name": "주방용품",
   },
   {
     "code": "085",
-    "name": "가전제품"
+    "name": "가전제품",
   },
   {
     "code": "991",
-    "name": "반려동물"
+    "name": "반려동물",
   },
   {
     "code": "919",
-    "name": "베이비·키즈·완구"
-  }
+    "name": "베이비·키즈·완구",
+  },
 ]
 
 
@@ -91,7 +91,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "772",
@@ -105,7 +105,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "772",
@@ -123,16 +123,16 @@ export const mdChoicesProductsData = [
       "content": [
         {
           "text": "+20%",
-          "weight": "bold"
+          "weight": "bold",
         },
         {
           "text": "쿠폰",
-          "weight": "regular"
-        }
+          "weight": "regular",
+        },
       ],
       "opacity": 90,
-      "background_color": "#BD76FF"
-    }
+      "background_color": "#BD76FF",
+    },
   },
   {
     "code": "772",
@@ -150,16 +150,16 @@ export const mdChoicesProductsData = [
       "content": [
         {
           "text": "+20%",
-          "weight": "bold"
+          "weight": "bold",
         },
         {
           "text": "쿠폰",
-          "weight": "regular"
-        }
+          "weight": "regular",
+        },
       ],
       "opacity": 90,
-      "background_color": "#BD76FF"
-    }
+      "background_color": "#BD76FF",
+    },
   },
   {
     "code": "772",
@@ -173,7 +173,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "772",
@@ -187,7 +187,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "907",
@@ -205,12 +205,12 @@ export const mdChoicesProductsData = [
       "content": [
         {
           "text": "+20%쿠폰",
-          "weight": "bold"
-        }
+          "weight": "bold",
+        },
       ],
       "opacity": 90,
-      "background_color": "#BD76FF"
-    }
+      "background_color": "#BD76FF",
+    },
   },
   {
     "code": "907",
@@ -224,7 +224,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "907",
@@ -238,7 +238,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "907",
@@ -252,7 +252,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "907",
@@ -266,7 +266,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "907",
@@ -280,7 +280,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "908",
@@ -294,7 +294,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "908",
@@ -308,7 +308,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "908",
@@ -322,7 +322,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "908",
@@ -336,7 +336,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "908",
@@ -350,7 +350,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "908",
@@ -364,7 +364,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "909",
@@ -378,7 +378,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "909",
@@ -392,7 +392,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "909",
@@ -406,7 +406,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "909",
@@ -420,7 +420,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "909",
@@ -434,7 +434,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "909",
@@ -448,7 +448,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "910",
@@ -462,7 +462,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "910",
@@ -476,7 +476,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "910",
@@ -490,7 +490,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "910",
@@ -504,7 +504,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "910",
@@ -518,7 +518,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "910",
@@ -532,7 +532,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "매주 월, 수, 금 정기 입고됩니다.",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "911",
@@ -546,7 +546,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "911",
@@ -560,7 +560,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "911",
@@ -574,7 +574,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "911",
@@ -588,7 +588,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "911",
@@ -602,7 +602,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "911",
@@ -616,7 +616,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "912",
@@ -630,7 +630,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "912",
@@ -644,7 +644,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "912",
@@ -658,7 +658,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "912",
@@ -672,7 +672,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "912",
@@ -686,7 +686,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "912",
@@ -700,7 +700,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "913",
@@ -714,7 +714,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "913",
@@ -728,7 +728,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "913",
@@ -742,7 +742,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "913",
@@ -756,7 +756,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "913",
@@ -770,7 +770,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "913",
@@ -784,7 +784,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -798,7 +798,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -812,7 +812,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -826,7 +826,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -840,7 +840,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -854,7 +854,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -868,7 +868,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -882,7 +882,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -896,7 +896,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -910,7 +910,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -924,7 +924,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -938,7 +938,7 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
+    "sticker": null,
   },
   {
     "code": "914",
@@ -952,6 +952,6 @@ export const mdChoicesProductsData = [
     "is_sold_out": false,
     "sold_out_title": "Coming Soon",
     "sold_out_text": "",
-    "sticker": null
-  }
+    "sticker": null,
+  },
 ]
