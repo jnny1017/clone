@@ -32,6 +32,34 @@ const initialState: MainInitialState = {
       ],
     },
   },
+  randomCollectionData2: {
+    id: 0,
+    title: '',
+    subtitle: '',
+    additional_text: null,
+    template_code: '',
+    template_type: '',
+    event_code: '',
+    data: {
+      collection_code: '',
+      has_more: true,
+      products: [
+        {
+          no: 0,
+          name: '',
+          short_description: '',
+          list_image_url: '',
+          original_price: 0,
+          discounted_price: 0,
+          discount_rate: 0,
+          is_sold_out: false,
+          sold_out_title: '',
+          sold_out_text: '',
+          sticker: null,
+        },
+      ],
+    },
+  },
 };
 
 export const mainSlice = createSlice({
@@ -45,12 +73,9 @@ export const mainSlice = createSlice({
   extraReducers: builder => {
     // Add reducers for additional action types here, and handle loading state as needed
     builder.addCase(fetchRandomCollectionData.fulfilled, (state, action) => {
-      state.randomCollectionData = {
-        randomCollectionDataResponse:
-          action.payload.randomCollectionDataResponse,
-        randomCollectionData2Response:
-          action.payload.randomCollectionData2Response,
-      };
+      state.randomCollectionData = action.payload.randomCollectionDataResponse;
+      state.randomCollectionData2 =
+        action.payload.randomCollectionData2Response;
     });
   },
 });

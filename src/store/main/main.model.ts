@@ -1,5 +1,6 @@
 export interface MainInitialState extends CategoryRes {
-  randomCollectionData: {};
+  randomCollectionData: RandomCollectionDataRes;
+  randomCollectionData2: RandomCollectionDataRes;
 }
 
 export interface RandomCollectionDataRes {

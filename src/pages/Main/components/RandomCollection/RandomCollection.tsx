@@ -12,20 +12,20 @@ interface Props {
 }
 
 export default function RandomCollection() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  const { randomCollectionData: { randomCollectionDataResponse, randomCollectionData2Response } } = useAppSelector((state) => state.main);
+  const { randomCollectionData, randomCollectionData2 } = useAppSelector(
+    state => state.main
+  );
 
   useEffect(() => {
     dispatch(fetchRandomCollectionData());
   }, [dispatch]);
 
-  console.log(randomCollectionDataResponse);
-
   return (
     <>
-      <CollectionSection data={randomCollectionDataResponse} />
-      <CollectionSection data={randomCollectionData2Response} />
+      <CollectionSection data={randomCollectionData} />
+      <CollectionSection data={randomCollectionData2} />
     </>
   );
 }
