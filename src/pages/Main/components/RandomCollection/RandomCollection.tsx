@@ -1,20 +1,31 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { useAppSelector } from 'store/store';
+import { fetchRandomCollectionData } from 'store/main/main.thunks';
+import { RandomCollectionDataRes } from 'store/main/main.model';
+
 import Slider from '../../../../components/Slider';
-import { randomCollectionData } from '../../data/randomCollection.data';
-
-// TODO: SectionModel
-import { SectionModel } from '../section/models';
-
 import Section from '../../../../components/Section';
-import { ProductInfo } from 'components/model/product.model';
 
 interface Props {
-  data: ProductInfo;
+  data: RandomCollectionDataRes;
 }
 
 export default function RandomCollection() {
+  const dispatch = useDispatch()
+
+  const { randomCollectionData: { randomCollectionDataResponse, randomCollectionData2Response } } = useAppSelector((state) => state.main);
+
+  useEffect(() => {
+    dispatch(fetchRandomCollectionData());
+  }, [dispatch]);
+
+  console.log(randomCollectionDataResponse);
+
   return (
     <>
-      <CollectionSection data={randomCollectionData} />
+      <CollectionSection data={randomCollectionDataResponse} />
+      <CollectionSection data={randomCollectionData2Response} />
     </>
   );
 }

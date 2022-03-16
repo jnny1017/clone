@@ -5,7 +5,7 @@ import {
   mainBannerData,
   mdChoicesCategoriesData,
   mdChoicesProductsData,
-} from './data/';
+} from './data';
 import PickSection from '../../components/PickSection';
 import { useDispatch } from 'react-redux';
 import { updateCode } from 'store/main/mainSlice';
@@ -16,6 +16,7 @@ export default function MainPage() {
   function handleClickCategory(code: string) {
     dispatch(updateCode(code));
   }
+
   return (
     <>
       <BannerSlider slides={mainBannerData} />

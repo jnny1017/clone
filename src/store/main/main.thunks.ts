@@ -13,7 +13,7 @@ export const fetchRandomCollectionData = createAsyncThunk(
 
     return {
       randomCollectionDataResponse: randomCollectionDataResponse.data,
-      randomCollectionData2Respons: randomCollectionData2Response.data,
+      randomCollectionData2Response: randomCollectionData2Response.data,
     };
   }
 );
