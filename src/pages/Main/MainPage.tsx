@@ -1,4 +1,4 @@
-import LazyComponent from 'components/lazy';
+import LazyComponent from 'components/Lazy';
 import BannerSlider from 'components/BannerSlider';
 import * as S from 'styles/mainStyles';
 import RandomCollection from './components/RandomCollection/RandomCollection';
