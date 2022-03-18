@@ -10,7 +10,7 @@ export default function LazyComponent({ children }: PropsWithChildren<Props>) {
     <LazyLoad
       once={true}
       placeholder={<div>loading</div>}
-      height={200}
+      offset={100}
     >
       {children}
     </LazyLoad>

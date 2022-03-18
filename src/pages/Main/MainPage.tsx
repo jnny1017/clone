@@ -1,4 +1,3 @@
-import LazyComponent from 'components/Lazy';
 import BannerSlider from 'components/BannerSlider';
 import * as S from 'styles/mainStyles';
 import RandomCollection from './components/RandomCollection/RandomCollection';
@@ -22,19 +21,13 @@ export default function MainPage() {
     <>
       <BannerSlider slides={mainBannerData} />
       <S.Main>
-        <LazyComponent>
-          <PickSection
-            title="MD의 추천"
-            categoryData={mdChoicesCategoriesData}
-            productData={mdChoicesProductsData}
-            onClick={handleClickCategory}
-          />
-          {[...Array(5).keys()].map(i => (
-            <LazyComponent key={i}>
-              <RandomCollection />
-            </LazyComponent>
-          ))}
-        </LazyComponent>
+        <PickSection
+          title="MD의 추천"
+          categoryData={mdChoicesCategoriesData}
+          productData={mdChoicesProductsData}
+          onClick={handleClickCategory}
+        />
+        <RandomCollection />
       </S.Main>
     </>
   );

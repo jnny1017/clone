@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import LazyComponent from 'components/Lazy';
 
 interface Props {
   data: SliderItemModel[];
@@ -24,7 +25,9 @@ export default function Slider({ data }: Props) {
       {data.map((slide, index) => (
         <SwiperSlide key={index}>
           <S.Slide>
-            <S.Thumbnail src={slide.list_image_url} alt="상품 이미지" />
+            <LazyComponent>
+              <S.Thumbnail src={slide.list_image_url} alt="상품 이미지" />
+            </LazyComponent>
             <S.Name>{slide.name}</S.Name>
             {slide.discount_rate !== 0 ? (
               <>
@@ -35,8 +38,8 @@ export default function Slider({ data }: Props) {
                 <S.Price>{slide.original_price}원</S.Price>
               </>
             ) : (
-              <S.DiscountPrice>{slide.original_price}원</S.DiscountPrice>
-            )}
+                <S.DiscountPrice>{slide.original_price}원</S.DiscountPrice>
+              )}
           </S.Slide>
         </SwiperSlide>
       ))}
