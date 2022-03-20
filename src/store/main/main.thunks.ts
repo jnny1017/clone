@@ -13,6 +13,33 @@ export const fetchMainBannerData = createAsyncThunk(
     };
   }
 );
+
+export const fetchMdChoiceCategoryData = createAsyncThunk(
+  'main/fetchMdChoiceCategoryData',
+  async () => {
+    const mdChoiceCategoryDataResponse = await API.get(
+      `${BASE_URL}/mdChoicesCategoriesData.json`
+    );
+
+    return {
+      mdChoiceCategoryDataResponse: mdChoiceCategoryDataResponse.data,
+    };
+  }
+);
+
+export const fetchMdChoiceProductData = createAsyncThunk(
+  'main/fetchMdChoiceProductData',
+  async () => {
+    const mdChoiceProductDataResponse = await API.get(
+      `${BASE_URL}/mdChoicesProductsData.json`
+    );
+
+    return {
+      mdChoiceProductDataResponse: mdChoiceProductDataResponse.data,
+    };
+  }
+);
+
 export const fetchRandomCollectionData = createAsyncThunk(
   'main/fetchRandomCollectionData',
   async () => {

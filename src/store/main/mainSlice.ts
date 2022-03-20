@@ -1,7 +1,11 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { MainInitialState } from './main.model';
-import { fetchRandomCollectionData } from './main.thunks';
+import {
   fetchMainBannerData,
+  fetchMdChoiceCategoryData,
+  fetchMdChoiceProductData,
+  fetchRandomCollectionData,
+} from './main.thunks';
 
 const initialState: MainInitialState = {
   code: '772',
@@ -21,6 +25,28 @@ const initialState: MainInitialState = {
       },
     ],
   },
+  mdChoiceCategoryData: [
+    {
+      code: '',
+      name: '',
+    },
+  ],
+  mdChoiceProductData: [
+    {
+      code: '',
+      no: 0,
+      name: '',
+      short_description: '',
+      list_image_url: '',
+      original_price: 0,
+      discounted_price: 0,
+      discount_rate: 0,
+      is_sold_out: false,
+      sold_out_title: '',
+      sold_out_text: '',
+      sticker: null,
+    },
+  ],
   randomCollectionData: {
     id: 0,
     title: '',
@@ -91,6 +117,15 @@ export const mainSlice = createSlice({
     builder.addCase(fetchMainBannerData.fulfilled, (state, action) => {
       state.mainBannerData = action.payload.mainBannerDataResponse;
     });
+
+    builder.addCase(fetchMdChoiceCategoryData.fulfilled, (state, action) => {
+      state.mdChoiceCategoryData = action.payload.mdChoiceCategoryDataResponse;
+    });
+
+    builder.addCase(fetchMdChoiceProductData.fulfilled, (state, action) => {
+      state.mdChoiceProductData = action.payload.mdChoiceProductDataResponse;
+    });
+
     builder.addCase(fetchRandomCollectionData.fulfilled, (state, action) => {
       state.randomCollectionData = action.payload.randomCollectionDataResponse;
       state.randomCollectionData2 =

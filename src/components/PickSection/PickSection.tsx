@@ -11,11 +11,6 @@ interface Props {
   onClick: (code: string) => void;
 }
 
-// mdChoicesCategoriesData
-// handleClickCategory
-
-//mdChoicesProductsData
-
 function PickSection({ title, categoryData, productData, onClick }: Props) {
   return (
     <Section title={title}>
