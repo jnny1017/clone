@@ -1,1 +1,1 @@
-export * from './RandomCollection';
+export { default } from './RandomCollectionSection';

@@ -1,6 +1,5 @@
 import BannerSlider from 'components/BannerSlider';
 import * as S from 'styles/mainStyles';
-import RandomCollection from './components/RandomCollection/RandomCollection';
 import {
   mainBannerData,
   mdChoicesCategoriesData,
@@ -9,6 +8,7 @@ import {
 import PickSection from '../../components/PickSection';
 import { useDispatch } from 'react-redux';
 import { updateCode } from 'store/main/mainSlice';
+import RandomCollectionSection from './components/RandomCollection'
 
 export default function MainPage() {
   const dispatch = useDispatch();
@@ -27,7 +27,8 @@ export default function MainPage() {
           productData={mdChoicesProductsData}
           onClick={handleClickCategory}
         />
-        <RandomCollection />
+        <RandomCollectionSection data={randomCollectionData} />
+        <RandomCollectionSection data={randomCollectionData2} />
       </S.Main>
     </>
   );
