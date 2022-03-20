@@ -13,5 +13,5 @@ export default function List({ data }: Props) {
     return data.filter(item => item.code === code);
   });
 
-  return <Slider data={filteredList} />;
+  return <Slider data={filteredList} onClickModal={() => { }} />;
 }

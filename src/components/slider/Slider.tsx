@@ -11,9 +11,10 @@ import 'swiper/css/scrollbar';
 
 interface Props {
   data: SliderItemModel[];
+  onClickModal: (slide: SliderItemModel) => void
 }
 
-export default function Slider({ data }: Props) {
+export default function Slider({ data, onClickModal }: Props) {
   return (
     <Swiper
       slidesPerView={4}
@@ -24,7 +25,21 @@ export default function Slider({ data }: Props) {
       {data.map((slide, index) => (
         <SwiperSlide key={index}>
           <S.Slide>
-            <S.Thumbnail src={slide.list_image_url} alt="상품 이미지" />
+            <S.Thumbnail>
+              <S.ThumbnailImg src={slide.list_image_url} alt="상품 이미지" />
+              <S.CartButton
+                type="button"
+                onClick={(event) => {
+                  //event.preventDefault();
+                  event.stopPropagation();
+                  onClickModal(slide);
+                }}
+              >
+                <S.Blind>
+                  장바구니에 담기
+                </S.Blind>
+              </S.CartButton>
+            </S.Thumbnail>
             <S.Name>{slide.name}</S.Name>
             {slide.discount_rate !== 0 ? (
               <>
@@ -37,6 +52,7 @@ export default function Slider({ data }: Props) {
             ) : (
                 <S.DiscountPrice>{slide.original_price}원</S.DiscountPrice>
               )}
+
           </S.Slide>
         </SwiperSlide>
       ))}

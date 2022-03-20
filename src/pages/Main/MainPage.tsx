@@ -6,13 +6,15 @@ import { fetchMainBannerData, fetchMdChoiceCategoryData, fetchMdChoiceProductDat
 import { useAppSelector } from '../../store/store';
 import * as S from '../../styles/mainStyles';
 
+import RandomCollectionSection from './components/RandomCollection';
+import CartModal from './components/CartModal';
 import BannerSlider from '../../components/BannerSlider';
 import PickSection from '../../components/PickSection';
-import RandomCollectionSection from './components/RandomCollection'
-
+import useModal from '../../components/useModal';
 
 export default function MainPage() {
   const dispatch = useDispatch();
+  const { isOpen, handleClickModal } = useModal();
 
   const { mainBannerData, mdChoiceCategoryData, mdChoiceProductData, randomCollectionData, randomCollectionData2 } = useAppSelector(
     state => state.main
@@ -40,8 +42,11 @@ export default function MainPage() {
           productData={mdChoiceProductData}
           onClick={handleClickCategory}
         />
-        <RandomCollectionSection data={randomCollectionData} />
-        <RandomCollectionSection data={randomCollectionData2} />
+        <RandomCollectionSection data={randomCollectionData} onClickModal={handleClickModal} />
+        <RandomCollectionSection data={randomCollectionData2} onClickModal={handleClickModal} />
+        {isOpen ?
+          <CartModal onClickModal={handleClickModal} />
+          : null}
       </S.Main>
     </>
   );
