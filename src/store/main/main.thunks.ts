@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import API, { BASE_URL } from 'config/apiManager';
+import API, { BASE_URL } from '../../config/apiManager';
 
 export const fetchMainBannerData = createAsyncThunk(
   'main/fetchMainBannerData',

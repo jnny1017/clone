@@ -1,6 +1,6 @@
-import { useAppSelector } from 'store/store';
-import * as S from 'styles/mainStyles';
 import { CategoryInfo } from './models/category.model';
+import { useAppSelector } from '../../store/store';
+import * as S from '../../styles/mainStyles';
 
 interface Props {
   data: CategoryInfo[];

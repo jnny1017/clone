@@ -1,4 +1,4 @@
-import { RandomCollectionDataRes } from 'store/main/main.model';
+import { RandomCollectionDataRes } from '../../../../store/main/main.model';
 
 import Slider from '../../../../components/Slider';
 import Section from '../../../../components/Section';

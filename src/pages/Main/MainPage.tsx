@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { updateCode } from 'store/main/mainSlice';
-import { fetchMainBannerData, fetchMdChoiceCategoryData, fetchMdChoiceProductData, fetchRandomCollectionData } from 'store/main/main.thunks';
-import { useAppSelector } from 'store/store';
-import * as S from 'styles/mainStyles';
+
+import { updateCode } from '../../store/main/mainSlice';
+import { fetchMainBannerData, fetchMdChoiceCategoryData, fetchMdChoiceProductData, fetchRandomCollectionData } from '../../store/main/main.thunks';
+import { useAppSelector } from '../../store/store';
+import * as S from '../../styles/mainStyles';
 
 import BannerSlider from '../../components/BannerSlider';
 import PickSection from '../../components/PickSection';

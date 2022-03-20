@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import * as S from 'styles/mainStyles';
+import * as S from '../../styles/mainStyles';
 
 interface Props {
   title: string;

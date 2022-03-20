@@ -2,7 +2,7 @@ import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { SliderItemModel } from './models/sliderItem.model';
-import * as S from 'styles/slideStyles';
+import * as S from '../../styles/slideStyles';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -35,8 +35,8 @@ export default function Slider({ data }: Props) {
                 <S.Price>{slide.original_price}원</S.Price>
               </>
             ) : (
-              <S.DiscountPrice>{slide.original_price}원</S.DiscountPrice>
-            )}
+                <S.DiscountPrice>{slide.original_price}원</S.DiscountPrice>
+              )}
           </S.Slide>
         </SwiperSlide>
       ))}

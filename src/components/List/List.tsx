@@ -1,4 +1,4 @@
-import { useAppSelector } from 'store/store';
+import { useAppSelector } from '../../store/store';
 import { ProductInfo } from '../model/product.model';
 import Slider from '../Slider';
 
