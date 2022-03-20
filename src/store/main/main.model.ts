@@ -1,8 +1,23 @@
 export interface MainInitialState extends CategoryRes {
+  mainBannerData: MainBannerRes;
   randomCollectionData: RandomCollectionDataRes;
   randomCollectionData2: RandomCollectionDataRes;
 }
 
+export interface MainBannerRes {
+  id?: number;
+  title?: string;
+  subtitle?: string;
+  additional_text?: null;
+  template_code?: string;
+  template_type?: string;
+  event_code?: string;
+  data: {
+    id: string;
+    image_url: string;
+    link?: string;
+  }[];
+}
 export interface RandomCollectionDataRes {
   id: number;
   title: string;

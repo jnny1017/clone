@@ -1,9 +1,26 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { MainInitialState } from './main.model';
 import { fetchRandomCollectionData } from './main.thunks';
+  fetchMainBannerData,
 
 const initialState: MainInitialState = {
   code: '772',
+  mainBannerData: {
+    id: 0,
+    title: '',
+    subtitle: '',
+    additional_text: null,
+    template_code: '',
+    template_type: '',
+    event_code: '',
+    data: [
+      {
+        id: '',
+        image_url: '',
+        link: '',
+      },
+    ],
+  },
   randomCollectionData: {
     id: 0,
     title: '',
@@ -71,7 +88,9 @@ export const mainSlice = createSlice({
     },
   },
   extraReducers: builder => {
-    // Add reducers for additional action types here, and handle loading state as needed
+    builder.addCase(fetchMainBannerData.fulfilled, (state, action) => {
+      state.mainBannerData = action.payload.mainBannerDataResponse;
+    });
     builder.addCase(fetchRandomCollectionData.fulfilled, (state, action) => {
       state.randomCollectionData = action.payload.randomCollectionDataResponse;
       state.randomCollectionData2 =
