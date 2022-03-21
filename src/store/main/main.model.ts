@@ -4,6 +4,7 @@ export interface MainInitialState extends CategoryRes {
   mdChoiceProductData: MdChoiceProductRes[];
   randomCollectionData: RandomCollectionDataRes;
   randomCollectionData2: RandomCollectionDataRes;
+  cartInfo: CartInfo;
 }
 
 export interface MainBannerRes {
@@ -66,4 +67,11 @@ export interface RandomCollectionDataRes {
 export interface CategoryRes {
   code: string;
   name?: string;
+}
+
+export interface CartInfo {
+  name: string;
+  original_price: number;
+  discount_rate: number;
+  discounted_price: number;
 }

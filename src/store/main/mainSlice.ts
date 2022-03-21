@@ -9,6 +9,12 @@ import {
 
 const initialState: MainInitialState = {
   code: '772',
+  cartInfo: {
+    name: '',
+    original_price: 0,
+    discount_rate: 0,
+    discounted_price: 0,
+  },
   mainBannerData: {
     id: 0,
     title: '',
@@ -112,6 +118,9 @@ export const mainSlice = createSlice({
     updateCode: (state, action: PayloadAction<string>) => {
       state.code = action.payload;
     },
+    updateCart: (state, action: PayloadAction<any>) => {
+      state.cartInfo = action.payload;
+    },
   },
   extraReducers: builder => {
     builder.addCase(fetchMainBannerData.fulfilled, (state, action) => {
@@ -134,6 +143,6 @@ export const mainSlice = createSlice({
   },
 });
 
-export const { updateCode } = mainSlice.actions;
+export const { updateCode, updateCart } = mainSlice.actions;
 
 export default mainSlice.reducer;

@@ -40,7 +40,7 @@ export default function Slider({ data, onClickModal }: Props) {
               </S.CartButton>
             </S.Thumbnail>
             <S.Name>{slide.name}</S.Name>
-            {slide.discount_rate !== 0 ? (
+            {slide.discount_rate > 0 ? (
               <>
                 <div>
                   <S.Discount>{slide.discount_rate}%</S.Discount>
