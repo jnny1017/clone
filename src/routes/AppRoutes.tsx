@@ -1,12 +1,14 @@
 import { Redirect, Switch, Route, useLocation } from 'react-router-dom';
-import { appRoutes } from 'routes/routes.model';
+import { appRoutes } from './routes.model';
 import { useEffect } from 'react';
 
 const AppRoutes = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (!pathname) return;
+    if (!pathname) {
+      return;
+    }
 
     window.scrollTo(0, 0);
   }, [pathname]);

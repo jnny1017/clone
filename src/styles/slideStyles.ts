@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { COLORS } from 'styles/colorStyles';
+import { COLORS } from './colorStyles';
 
 export const Slide = styled.div`
   display: flex;

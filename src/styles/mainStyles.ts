@@ -1,10 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { COLORS } from 'styles/colorStyles';
-
-export const MainBanner = styled.div`
-  //TODO
-`;
+import { COLORS } from './colorStyles';
 
 export const Main = styled.div`
   width: 1050px;
@@ -17,8 +13,7 @@ export const Category = styled.ul`
   justify-content: center;
 `;
 
-export const CategoryItem = styled.li`
-`;
+export const CategoryItem = styled.li``;
 
 export const CategoryLink = styled.a<{ selected: boolean }>`
   display: block;
@@ -30,13 +25,15 @@ export const CategoryLink = styled.a<{ selected: boolean }>`
   line-height: 16px;
   background-color: #f7f7f7;
   color: ${COLORS.black};
-  ${({selected}) => selected && css`
-    background-color: ${COLORS.purple};
-    color: ${COLORS.white};
-  `}
+  ${({ selected }) =>
+    selected &&
+    css`
+      background-color: ${COLORS.purple};
+      color: ${COLORS.white};
+    `}
 `;
 
-export const Title = styled.h1`
+export const Title = styled.p`
   display: flex;
   margin-bottom: 27px;
   justify-content: center;
@@ -45,4 +42,20 @@ export const Title = styled.h1`
   font-weight: 600;
   color: ${COLORS.black};
   letter-spacing: -0.26px;
+`;
+
+export const SubTitle = styled.p`
+  margin-top: 2px;
+  font-size: 16px;
+  color: #999999;
+  letter-spacing: -0.2px;
+  text-align: center;
+`;
+
+export const Section = styled.div`
+  margin-top: 72px;
+`;
+
+export const Inner = styled.div`
+  margin-top: 22px;
 `;
