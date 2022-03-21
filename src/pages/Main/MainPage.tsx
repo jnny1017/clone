@@ -10,12 +10,13 @@ import RandomCollectionSection from './components/RandomCollection';
 import CartModal from './components/CartModal';
 import BannerSlider from '../../components/BannerSlider';
 import PickSection from '../../components/PickSection';
-import useModal from '../../components/useModal';
 import { SliderItemModel } from '../../components/Slider/models/sliderItem.model';
+import useModal from '../../hooks/Modal';
 
 export default function MainPage() {
   const dispatch = useDispatch();
-  const { isOpen, handleClickModal } = useModal();
+
+  const { isOpen, toggle } = useModal();
 
   const {
     mainBannerData,
@@ -38,7 +39,7 @@ export default function MainPage() {
 
   function handleClickSlide(slide: SliderItemModel) {
     dispatch(updateCart(slide));
-    handleClickModal();
+    toggle();
   }
 
   function handleClickCategory(code: string) {
@@ -58,7 +59,7 @@ export default function MainPage() {
         <RandomCollectionSection data={randomCollectionData} onClickModal={handleClickSlide} />
         <RandomCollectionSection data={randomCollectionData2} onClickModal={handleClickSlide} />
         {isOpen ?
-          <CartModal onClickModal={handleClickModal} />
+          <CartModal onClickModal={toggle} />
           : null}
       </S.Main>
     </>
