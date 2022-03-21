@@ -30,7 +30,6 @@ export default function Slider({ data, onClickModal }: Props) {
               <S.CartButton
                 type="button"
                 onClick={(event) => {
-                  //event.preventDefault();
                   event.stopPropagation();
                   onClickModal(slide);
                 }}

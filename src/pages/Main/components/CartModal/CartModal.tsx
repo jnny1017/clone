@@ -1,4 +1,3 @@
-import { SliderItemModel } from '../../../../components/Slider/models/sliderItem.model';
 import Modal from '../../../../components/Modal';
 
 interface Props {
