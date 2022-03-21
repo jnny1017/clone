@@ -29,3 +29,14 @@ export const Price = styled.span`
   color: #999;
   text-decoration: line-through;
 `;
+
+export const Text = styled.strong`
+  font-size: 16px;
+  font-weight: 700;
+`;
+
+export const Button = styled.button`
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+`;
