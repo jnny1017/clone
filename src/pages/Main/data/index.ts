@@ -1,1 +1,2 @@
-export * from './mainBanner';
+export * from './mainBanner.data';
+export * from './mdChoices.data';

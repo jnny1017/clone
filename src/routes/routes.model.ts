@@ -1,4 +1,4 @@
-import MainPage from '../pages/main/MainPage';
+import MainPage from '../pages/Main';
 
 interface PathItem {
   path: string;
