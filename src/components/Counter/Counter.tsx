@@ -1,24 +1,24 @@
+import { useCounterContext } from '../../contexts/Counter/WithCounter';
 import * as S from '../../styles/counterStyles'
 
-interface Props {
-  count: number,
-  onClickIncrement: () => void,
-  onClickDecrement: () => void,
-}
+export default function Counter() {
+  const { count, setCount } = useCounterContext();
 
-export default function Counter({ count, onClickIncrement, onClickDecrement }: Props) {
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+
   return (
     <S.Counter>
       <S.Button
         type="button"
-        onClick={onClickDecrement}
+        onClick={decrement}
       >
         수량 감소
       </S.Button>
       <S.Input type="number" value={count} readOnly />
       <S.Button
         type="button"
-        onClick={onClickIncrement}
+        onClick={increment}
       >
         수량 증가
       </S.Button>

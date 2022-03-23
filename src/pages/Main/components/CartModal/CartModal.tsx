@@ -3,13 +3,13 @@ import { useAppSelector } from '../../../../store/store';
 
 import Counter from '../../../../components/Counter';
 import * as S from '../../../../styles/cartModalStyles';
-import useCounter from '../../../../hooks/Counter';
+import { useCounterContext, WithCounter } from '../../../../contexts/Counter/WithCounter';
 
 interface Props {
   onClickModal: () => void
 }
 
-export default function CartModal({ onClickModal }: Props) {
+function CartModal({ onClickModal }: Props) {
   const {
     name,
     discount_rate,
@@ -19,7 +19,7 @@ export default function CartModal({ onClickModal }: Props) {
     state => state.main.cartInfo
   );
 
-  const { count, increment, decrement } = useCounter();
+  const { count } = useCounterContext();
 
   return (
     <Modal>
@@ -32,11 +32,7 @@ export default function CartModal({ onClickModal }: Props) {
               <S.Price>{original_price}원</S.Price>
             </>
           ) : <S.DiscountPrice>{original_price}원</S.DiscountPrice>}
-          <Counter
-            count={count}
-            onClickIncrement={increment}
-            onClickDecrement={decrement}
-          />
+          <Counter />
         </S.Row>
         <S.Row>
           <S.Text>합계</S.Text>
@@ -53,3 +49,5 @@ export default function CartModal({ onClickModal }: Props) {
     </Modal>
   );
 }
+
+export default WithCounter(CartModal);
