@@ -10,6 +10,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useDispatch } from 'react-redux';
+import { updateCart } from '../../store/main/mainSlice';
 
 interface Props {
   data: SliderItemModel[];
@@ -19,7 +21,11 @@ interface Props {
 export default function Slider({ data, onClickModal }: Props) {
   const history = useHistory();
 
+  const dispatch = useDispatch();
+
+
   function handleClickProduct(slide: SliderItemModel) {
+    dispatch(updateCart(slide));
     history.push(`detail`)
   }
 
@@ -33,7 +39,6 @@ export default function Slider({ data, onClickModal }: Props) {
       {data.map((slide, index) => (
         <SwiperSlide key={index}>
           <S.Slide>
-            <S.Thumbnail>
             <S.Thumbnail onClick={() => handleClickProduct(slide)}>
               <S.ThumbnailImg src={slide.list_image_url} alt="상품 이미지" />
               <S.CartButton
@@ -60,7 +65,6 @@ export default function Slider({ data, onClickModal }: Props) {
             ) : (
                 <S.DiscountPrice>{slide.original_price}원</S.DiscountPrice>
               )}
-
           </S.Slide>
         </SwiperSlide>
       ))}

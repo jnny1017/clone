@@ -7,10 +7,15 @@ export const Slide = styled.div`
   flex-direction: column;
 `;
 
+export const Link = styled.a`
+  display: block;
+`;
+
 export const Thumbnail = styled.div`
   position: relative;
   width: 249px;
   height: 320px;
+  cursor: pointer;
 `;
 
 export const ThumbnailImg = styled.img`

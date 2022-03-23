@@ -11,6 +11,7 @@ const initialState: MainInitialState = {
   code: '772',
   cartInfo: {
     name: '',
+    short_description: '',
     list_image_url: '',
     original_price: 0,
     discount_rate: 0,
