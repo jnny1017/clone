@@ -55,6 +55,7 @@ export default function MainPage() {
           categoryData={mdChoiceCategoryData}
           productData={mdChoiceProductData}
           onClick={handleClickCategory}
+          onClickModal={handleClickSlide}
         />
         <RandomCollectionSection data={randomCollectionData} onClickModal={handleClickSlide} />
         <RandomCollectionSection data={randomCollectionData2} onClickModal={handleClickSlide} />
