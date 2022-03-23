@@ -1,3 +1,5 @@
+import { useHistory } from 'react-router-dom';
+
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -15,6 +17,12 @@ interface Props {
 }
 
 export default function Slider({ data, onClickModal }: Props) {
+  const history = useHistory();
+
+  function handleClickProduct(slide: SliderItemModel) {
+    history.push(`detail`)
+  }
+
   return (
     <Swiper
       slidesPerView={4}
@@ -26,6 +34,7 @@ export default function Slider({ data, onClickModal }: Props) {
         <SwiperSlide key={index}>
           <S.Slide>
             <S.Thumbnail>
+            <S.Thumbnail onClick={() => handleClickProduct(slide)}>
               <S.ThumbnailImg src={slide.list_image_url} alt="상품 이미지" />
               <S.CartButton
                 type="button"
