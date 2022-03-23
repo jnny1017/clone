@@ -1,11 +1,11 @@
+import { PropsWithChildren } from 'react';
 import * as S from '../../styles/modalStyles';
 
 interface Props {
   title?: string;
-  children: React.ReactNode;
 }
 
-export default function Modal({ title, children }: Props) {
+export default function Modal({ title, children }: PropsWithChildren<Props>) {
   return (
     <div>
       <S.ModalOverlay />

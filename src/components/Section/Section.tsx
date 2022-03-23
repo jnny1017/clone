@@ -4,7 +4,6 @@ import * as S from '../../styles/mainStyles';
 interface Props {
   title: string;
   subtitle?: string;
-  children: React.ReactNode;
 }
 
 export default function Section({
