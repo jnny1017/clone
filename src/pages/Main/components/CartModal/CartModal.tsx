@@ -6,10 +6,11 @@ import * as S from '../../../../styles/cartModalStyles';
 import { useCounterContext, WithCounter } from '../../../../contexts/Counter/WithCounter';
 
 interface Props {
-  onClickModal: () => void
+  onClickCancel: () => void;
+  onClickAddCart: () => void;
 }
 
-function CartModal({ onClickModal }: Props) {
+function CartModal({ onClickCancel, onClickAddCart }: Props) {
   const {
     name,
     discount_rate,
@@ -20,6 +21,11 @@ function CartModal({ onClickModal }: Props) {
   );
 
   const { count } = useCounterContext();
+
+  function handleClickAddCart() {
+    onClickAddCart();
+    onClickCancel();
+  }
 
   return (
     <Modal>
@@ -42,8 +48,8 @@ function CartModal({ onClickModal }: Props) {
           }
         </S.Row>
         <S.Row>
-          <S.Button type="button" onClick={onClickModal}>취소</S.Button>
-          <S.Button type="button">장바구니 담기</S.Button>
+          <S.Button type="button" onClick={onClickCancel}>취소</S.Button>
+          <S.Button type="button" onClick={handleClickAddCart}>장바구니 담기</S.Button>
         </S.Row>
       </S.CartInner>
     </Modal>

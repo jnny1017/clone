@@ -71,6 +71,7 @@ export interface CategoryRes {
 
 export interface CartInfo {
   name: string;
+  list_image_url: string;
   original_price: number;
   discount_rate: number;
   discounted_price: number;
