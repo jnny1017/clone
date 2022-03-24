@@ -39,7 +39,6 @@ export const Price = styled.strong`
 export const DiscountRate = styled.strong`
   font-weight: 700;
   font-size: 28px;
-  color: #fa622f;
   color: ${COLORS.orange};
 `;
 
