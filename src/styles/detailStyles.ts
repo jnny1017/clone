@@ -6,6 +6,11 @@ export const Row = styled.div`
   display: flex;
 `;
 
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Thumbnail = styled.div`
   width: 430px;
   height: 552px;
@@ -24,10 +29,16 @@ export const Title = styled.strong`
 `;
 
 export const Desc = styled.p`
-  margin: 22px 0;
+  margin-top: 22px;
   font-weight: 700;
   font-size: 14px;
   color: ${COLORS.gray};
+`;
+
+export const PriceInfo = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
 `;
 
 export const Price = styled.strong`
@@ -46,4 +57,17 @@ export const DiscountPrice = styled.strong`
   font-weight: 700;
   font-size: 28px;
   color: ${COLORS.black};
+`;
+
+export const CartButton = styled.button`
+  width: 432px;
+  height: 56px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+  background-color: ${COLORS.purple};
+  border: 1px solid ${COLORS.purple};
+  cursor: pointer;
 `;
