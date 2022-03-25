@@ -64,3 +64,12 @@ export interface RandomCollectionInfo {
 //   opacity: number;
 //   background_color: string;
 // }
+
+export interface CartInfo {
+  name: string;
+  list_image_url: string;
+  short_description: string;
+  original_price: number;
+  discount_rate: number;
+  discounted_price: number;
+}
