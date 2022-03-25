@@ -1,16 +1,13 @@
-import { useAppSelector } from '../../../../store/store';
-
 import Toast from '../../../../components/Toast'
 import * as S from '../../../../styles/cartToastStyles';
+import { CartInfo } from '../../../Cart/models';
 
-export default function CartToast() {
+interface Props {
+  data: CartInfo;
+}
 
-  const {
-    name,
-    list_image_url
-  } = useAppSelector(
-    state => state.main.cartInfo
-  );
+export default function CartToast({ data }: Props) {
+  const { list_image_url, name } = data;
 
   return (
     <Toast>

@@ -31,6 +31,8 @@ export default function MainPage() {
     state => state.main
   );
 
+  const { cartInfo } = useAppSelector(state => state.main);
+
   useEffect(() => {
     dispatch(fetchMainBannerData());
     dispatch(fetchRandomCollectionData());

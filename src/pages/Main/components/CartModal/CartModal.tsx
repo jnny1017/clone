@@ -1,26 +1,23 @@
+import { useCounterContext, WithCounter } from '../../../../contexts/Counter/WithCounter';
 import Modal from '../../../../components/Modal';
-import { useAppSelector } from '../../../../store/store';
-
 import Counter from '../../../../components/Counter';
 import * as S from '../../../../styles/cartModalStyles';
-import { useCounterContext, WithCounter } from '../../../../contexts/Counter/WithCounter';
+import { CartInfo } from '../../models';
 
 interface Props {
+  data: CartInfo,
   onClickCancel: () => void;
   onClickAddCart: () => void;
 }
 
-function CartModal({ onClickCancel, onClickAddCart }: Props) {
-  const {
-    name,
-    discount_rate,
-    discounted_price,
-    original_price,
-  } = useAppSelector(
-    state => state.main.cartInfo
-  );
-
+function CartModal({
+  data,
+  onClickCancel,
+  onClickAddCart
+}: Props) {
   const { count } = useCounterContext();
+
+  const { name, discount_rate, discounted_price, original_price } = data
 
   function handleClickAddCart() {
     onClickAddCart();
