@@ -50,13 +50,17 @@ export default function MainPage() {
     return () => clearTimeout(timeout);
   }, [isToastOpen, setToastIsOpen]);
 
-  function handleClickSlide(slide: SliderItemModel) {
-    dispatch(updateCart(slide));
+  function handleClickModal(product: SliderItemModel) {
+    dispatch(updateCart(product));
     toggle();
   }
 
   function handleClickCategory(code: string) {
     dispatch(updateCode(code));
+  }
+
+  function handleClickAddCart() {
+    toggleToast();
   }
 
   return (
@@ -68,15 +72,19 @@ export default function MainPage() {
           categoryData={mdChoiceCategoryData}
           productData={mdChoiceProductData}
           onClick={handleClickCategory}
-          onClickModal={handleClickSlide}
+          onClickModal={handleClickModal}
         />
-        <RandomCollectionSection data={randomCollectionData} onClickModal={handleClickSlide} />
-        <RandomCollectionSection data={randomCollectionData2} onClickModal={handleClickSlide} />
+        <RandomCollectionSection data={randomCollectionData} onClickModal={handleClickModal} />
+        <RandomCollectionSection data={randomCollectionData2} onClickModal={handleClickModal} />
         {isOpen ?
-          <CartModal onClickCancel={toggle} onClickAddCart={toggleToast} />
+          <CartModal
+            data={cartInfo}
+            onClickCancel={toggle}
+            onClickAddCart={handleClickAddCart}
+          />
           : null}
         {isToastOpen ?
-          <CartToast />
+          <CartToast data={cartInfo} />
           : null}
       </S.Main>
     </>

@@ -1,17 +1,17 @@
+import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { SliderItemModel } from './models/sliderItem.model';
-import * as S from '../../styles/slideStyles';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { useDispatch } from 'react-redux';
 import { updateCart } from '../../store/main/mainSlice';
+
+import { SliderItemModel } from './models/sliderItem.model';
+import * as S from '../../styles/slideStyles';
 
 interface Props {
   data: SliderItemModel[];
@@ -23,9 +23,8 @@ export default function Slider({ data, onClickModal }: Props) {
 
   const dispatch = useDispatch();
 
-
-  function handleClickProduct(slide: SliderItemModel) {
-    dispatch(updateCart(slide));
+  function handleClickProduct(product: SliderItemModel) {
+    dispatch(updateCart(product));
     history.push(`detail`)
   }
 
