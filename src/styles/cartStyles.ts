@@ -5,6 +5,7 @@ import { COLORS } from './colorStyles';
 export const Row = styled.div`
   display: flex;
   align-items: center;
+  padding: 18px 0;
 `;
 
 export const Column = styled.div`
@@ -13,16 +14,17 @@ export const Column = styled.div`
 `;
 
 export const Thumbnail = styled.div`
+  display: inline-flex;
   width: 60px;
   height: 78px;
 `;
 
 export const Img = styled.img`
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
 `;
 
 export const Title = styled.strong`
+  margin-left: 12px;
   font-weight: 700;
   font-size: 16px;
   color: ${COLORS.black};
