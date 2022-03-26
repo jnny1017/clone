@@ -17,8 +17,25 @@ function DetailPage() {
   );
 
   function onClickAddCart(cartInfo: CartInfo) {
-    history.push(`cart`);
     dispatch(updateAddCart(cartInfo));
+
+    if (cartInfo !== null) {
+      const cartList = JSON.parse(localStorage.getItem('cartInfo')!) || [];
+      const duplicated = cartList.some((item: any) => item.name === cartInfo.name);
+
+      if (duplicated === true) {
+        //TODO Toast모달로 리팩터링
+        alert('이미 담으신 상품이 있어 추가되었습니다.');
+      };
+
+      const data = [
+        ...cartList,
+        cartInfo
+      ]
+      localStorage.setItem('cartInfo', JSON.stringify(data));
+
+      history.push(`cart`);
+    }
   }
 
   return (

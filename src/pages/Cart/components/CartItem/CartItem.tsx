@@ -4,12 +4,17 @@ import { WithCounter } from '../../../../contexts/Counter';
 import * as S from '../../../../styles/cartStyles';
 import Icon from '../../../../components/Icon';
 import Button from '../../../../components/Button';
-import { cartData } from '../../../Main/data/cart.data';
+import { CartInfo } from '../../../Main/models';
 
-function CartItem() {
+interface Props {
+  data: CartInfo[];
+  onClickDelete: (name: string) => void;
+}
+
+function CartItem({ data, onClickDelete }: Props) {
   return (
     <>
-      {cartData.map(({ name, list_image_url, discounted_price, original_price }) => {
+      {data.map(({ name, list_image_url, discounted_price, original_price }: CartInfo) => {
         return (
           <S.Row key={name}>
             <Checkbox id={name} />
@@ -19,7 +24,7 @@ function CartItem() {
             <S.Title>{name}</S.Title>
             <Counter />
             <S.OriginalPrice>{original_price}원</S.OriginalPrice>
-            <Button onClick={() => { }}>
+            <Button onClick={() => onClickDelete(name)}>
               <Icon imgSrc="ico_delete" />
             </Button>
           </S.Row>
