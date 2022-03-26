@@ -1,6 +1,6 @@
 import { useCounterContext } from '../../contexts/Counter/WithCounter';
 import Icon from '../Icon';
-import IconButton from '../IconButton';
+import Button from '../Button';
 import * as S from '../../styles/counterStyles'
 
 
@@ -12,13 +12,13 @@ export default function Counter() {
 
   return (
     <S.Counter>
-      <IconButton onClick={decrement}>
+      <Button onClick={decrement}>
         <Icon imgSrc="ico_minus" />
-      </IconButton>
+      </Button>
       <S.Input type="number" value={count} readOnly />
-      <IconButton onClick={increment}>
+      <Button onClick={increment}>
         <Icon imgSrc="ico_plus" />
-      </IconButton>
+      </Button>
     </S.Counter>
   );
 }

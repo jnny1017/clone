@@ -1,18 +1,12 @@
 import Counter from '../../../../components/Counter';
 import Checkbox from '../../../../components/Checkbox';
 import { WithCounter } from '../../../../contexts/Counter';
-import { CartInfo } from '../../models';
 import * as S from '../../../../styles/cartStyles';
 import Icon from '../../../../components/Icon';
-import IconButton from '../../../../components/IconButton';
+import Button from '../../../../components/Button';
 import { cartData } from '../../../Main/data/cart.data';
 
-interface Props {
-  data: CartInfo;
-}
-
-function CartItem({ data }: Props) {
-
+function CartItem() {
   return (
     <>
       {cartData.map(({ name, list_image_url, discounted_price, original_price }) => {
@@ -25,9 +19,9 @@ function CartItem({ data }: Props) {
             <S.Title>{name}</S.Title>
             <Counter />
             <S.OriginalPrice>{original_price}원</S.OriginalPrice>
-            <IconButton onClick={() => { }}>
+            <Button onClick={() => { }}>
               <Icon imgSrc="ico_delete" />
-            </IconButton>
+            </Button>
           </S.Row>
         )
       })}
