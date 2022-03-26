@@ -1,12 +1,13 @@
 interface Props {
   id: string;
+  label?: string;
 }
 
-export default function Checkbox({ id }: Props) {
+export default function Checkbox({ id, label }: Props) {
   return (
-    <>
-      <label htmlFor={id} />
+    <div>
       <input type="checkbox" id={id} />
-    </>
+      <label htmlFor={id}>{label}</label>
+    </div>
   );
 }
