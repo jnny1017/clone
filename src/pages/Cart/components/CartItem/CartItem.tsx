@@ -3,6 +3,8 @@ import Checkbox from '../../../../components/Checkbox';
 import { WithCounter } from '../../../../contexts/Counter';
 import { CartInfo } from '../../models';
 import * as S from '../../../../styles/cartStyles';
+import Icon from '../../../../components/Icon';
+import IconButton from '../../../../components/IconButton';
 
 interface Props {
   data: CartInfo;
@@ -21,6 +23,9 @@ function CartItem({ data }: Props) {
         <S.Title>{name}</S.Title>
         <Counter />
         <S.OriginalPrice>{original_price}원</S.OriginalPrice>
+        <IconButton onClick={() => { }}>
+          <Icon imgSrc="ico_delete" />
+        </IconButton>
       </S.Row>
     </>
   );
