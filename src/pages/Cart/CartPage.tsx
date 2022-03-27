@@ -13,12 +13,15 @@ export default function CartPage() {
 
   return (
     <>
+      {console.log(cartList)}
       <S.PageTitle>장바구니</S.PageTitle>
       <Checkbox id="allSelect" label="전체선택" />
-      <Button onClick={() => { }} >선택삭제</Button>
-      {cartList === null ?
+      <Button onClick={() => {}}>선택삭제</Button>
+      {cartList === null ? (
         <S.EmptyData>장바구니에 담긴 상품이 없습니다.</S.EmptyData>
-        : <CartItem data={cartList} onClickDelete={handleProductDelete} />}
+      ) : (
+        <CartItem data={cartList} onClickDelete={handleProductDelete} />
+      )}
     </>
-  )
+  );
 }

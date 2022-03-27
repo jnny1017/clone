@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,12 +10,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { updateCart } from '../../store/main/mainSlice';
 
-import { SliderItemModel } from './models/sliderItem.model';
 import * as S from '../../styles/slideStyles';
+import { CartInfo } from '../../store/cart/cart.model';
 
 interface Props {
-  data: SliderItemModel[];
-  onClickModal: (slide: SliderItemModel) => void
+  data: CartInfo[];
+  onClickModal: (slide: CartInfo) => void;
 }
 
 export default function Slider({ data, onClickModal }: Props) {
@@ -23,9 +23,9 @@ export default function Slider({ data, onClickModal }: Props) {
 
   const dispatch = useDispatch();
 
-  function handleClickProduct(product: SliderItemModel) {
+  function handleClickProduct(product: CartInfo) {
     dispatch(updateCart(product));
-    history.push(`detail`)
+    history.push(`detail`);
   }
 
   return (
@@ -42,18 +42,16 @@ export default function Slider({ data, onClickModal }: Props) {
               <S.ThumbnailImg src={slide.list_image_url} alt="상품 이미지" />
               <S.CartButton
                 type="button"
-                onClick={(event) => {
+                onClick={event => {
                   event.stopPropagation();
                   onClickModal(slide);
                 }}
               >
-                <S.Blind>
-                  장바구니에 담기
-                </S.Blind>
+                <S.Blind>장바구니에 담기</S.Blind>
               </S.CartButton>
             </S.Thumbnail>
             <S.Name>{slide.name}</S.Name>
-            {slide.discount_rate > 0 ? (
+            {slide.discount_rate && slide.discount_rate > 0 ? (
               <>
                 <div>
                   <S.Discount>{slide.discount_rate}%</S.Discount>
@@ -62,8 +60,8 @@ export default function Slider({ data, onClickModal }: Props) {
                 <S.Price>{slide.original_price}원</S.Price>
               </>
             ) : (
-                <S.DiscountPrice>{slide.original_price}원</S.DiscountPrice>
-              )}
+              <S.DiscountPrice>{slide.original_price}원</S.DiscountPrice>
+            )}
           </S.Slide>
         </SwiperSlide>
       ))}

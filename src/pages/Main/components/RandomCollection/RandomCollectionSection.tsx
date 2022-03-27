@@ -1,12 +1,14 @@
-import { RandomCollectionDataRes } from '../../../../store/main/main.model';
+import {
+  ProductInfo,
+  RandomCollectionDataRes,
+} from '../../../../store/main/main.model';
 
 import Slider from '../../../../components/Slider';
 import Section from '../../../../components/Section';
-import { SliderItemModel } from '../../../../components/Slider/models/sliderItem.model';
 
 interface Props {
   data: RandomCollectionDataRes;
-  onClickModal: (slide: SliderItemModel) => void
+  onClickModal: (slide: ProductInfo) => void;
 }
 
 export default function RandomCollectionSection({ data, onClickModal }: Props) {

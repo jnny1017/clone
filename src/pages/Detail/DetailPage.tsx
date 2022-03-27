@@ -1,42 +1,47 @@
 import { useAppSelector } from '../../store/store';
 import Counter from '../../components/Counter';
 import * as S from '../../styles/detailStyles';
-import { WithCounter } from '../../contexts/Counter';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { updateAddCart } from '../../store/cart/cartSlice';
-import { CartInfo } from '../Cart/models';
+import { CartInfo } from '../../store/cart/cart.model';
 
 function DetailPage() {
   const history = useHistory();
 
   const dispatch = useDispatch();
 
-  const { cartInfo } = useAppSelector(
-    state => state.main
-  );
+  const { cartInfo } = useAppSelector(state => state.main);
+  const { updatedCount } = useAppSelector(state => state.cart);
 
-  function onClickAddCart(cartInfo: CartInfo) {
+  const alertToDuplicateItems = (cartList: CartInfo[]) => {
+    const duplicated = cartList.some(
+      (item: any) => item.name === cartInfo.name
+    );
+
+    if (duplicated) {
+      //TODO Toast모달로 리팩터링
+      alert('이미 담으신 상품이 있어 추가되었습니다.');
+    }
+  };
+
+  const goToCart = () => {
+    history.push(`cart`);
+  };
+
+  const onClickAddCart = (cartInfo: CartInfo) => {
     dispatch(updateAddCart(cartInfo));
 
     if (cartInfo !== null) {
       const cartList = JSON.parse(localStorage.getItem('cartInfo')!) || [];
-      const duplicated = cartList.some((item: any) => item.name === cartInfo.name);
+      alertToDuplicateItems(cartList);
 
-      if (duplicated === true) {
-        //TODO Toast모달로 리팩터링
-        alert('이미 담으신 상품이 있어 추가되었습니다.');
-      };
-
-      const data = [
-        ...cartList,
-        cartInfo
-      ]
+      const data = [...cartList, { ...cartInfo, count: updatedCount }];
       localStorage.setItem('cartInfo', JSON.stringify(data));
 
-      history.push(`cart`);
+      goToCart();
     }
-  }
+  };
 
   return (
     <>
@@ -52,12 +57,15 @@ function DetailPage() {
             <S.DiscountRate>{cartInfo.discount_rate}%</S.DiscountRate>
             <S.Price>{cartInfo.original_price}원</S.Price>
           </S.PriceInfo>
-          <Counter />
-          <S.CartButton type="button" onClick={() => onClickAddCart(cartInfo)}> 장바구니 담기</S.CartButton>
+          <Counter count={0} />
+          <S.CartButton type="button" onClick={() => onClickAddCart(cartInfo)}>
+            {' '}
+            장바구니 담기
+          </S.CartButton>
         </S.Column>
       </S.Row>
     </>
   );
 }
 
-export default WithCounter(DetailPage);
+export default DetailPage;

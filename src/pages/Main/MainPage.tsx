@@ -1,8 +1,13 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { updateCode, updateCart } from '../../store/main/mainSlice';
-import { fetchMainBannerData, fetchMdChoiceCategoryData, fetchMdChoiceProductData, fetchRandomCollectionData } from '../../store/main/main.thunks';
+import {
+  fetchMainBannerData,
+  fetchMdChoiceCategoryData,
+  fetchMdChoiceProductData,
+  fetchRandomCollectionData,
+} from '../../store/main/main.thunks';
 import { useAppSelector } from '../../store/store';
 import * as S from '../../styles/mainStyles';
 
@@ -10,10 +15,10 @@ import RandomCollectionSection from './components/RandomCollection';
 import CartModal from './components/CartModal';
 import BannerSlider from '../../components/BannerSlider';
 import PickSection from '../../components/PickSection';
-import { SliderItemModel } from '../../components/Slider/models/sliderItem.model';
 import CartToast from './components/CartToast';
 import useModal from '../../hooks/Modal';
 import useToast from '../../hooks/Toast';
+import { ProductInfo } from '../../store/main/main.model';
 
 export default function MainPage() {
   const dispatch = useDispatch();
@@ -26,10 +31,8 @@ export default function MainPage() {
     mdChoiceCategoryData,
     mdChoiceProductData,
     randomCollectionData,
-    randomCollectionData2
-  } = useAppSelector(
-    state => state.main
-  );
+    randomCollectionData2,
+  } = useAppSelector(state => state.main);
 
   const { cartInfo } = useAppSelector(state => state.main);
 
@@ -50,7 +53,7 @@ export default function MainPage() {
     return () => clearTimeout(timeout);
   }, [isToastOpen, setToastIsOpen]);
 
-  function handleClickModal(product: SliderItemModel) {
+  function handleClickModal(product: ProductInfo) {
     dispatch(updateCart(product));
     toggle();
   }
@@ -74,18 +77,22 @@ export default function MainPage() {
           onClick={handleClickCategory}
           onClickModal={handleClickModal}
         />
-        <RandomCollectionSection data={randomCollectionData} onClickModal={handleClickModal} />
-        <RandomCollectionSection data={randomCollectionData2} onClickModal={handleClickModal} />
-        {isOpen ?
+        <RandomCollectionSection
+          data={randomCollectionData}
+          onClickModal={handleClickModal}
+        />
+        <RandomCollectionSection
+          data={randomCollectionData2}
+          onClickModal={handleClickModal}
+        />
+        {isOpen ? (
           <CartModal
             data={cartInfo}
             onClickCancel={toggle}
             onClickAddCart={handleClickAddCart}
           />
-          : null}
-        {isToastOpen ?
-          <CartToast data={cartInfo} />
-          : null}
+        ) : null}
+        {isToastOpen ? <CartToast data={cartInfo} /> : null}
       </S.Main>
     </>
   );

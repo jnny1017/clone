@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { CartInfo } from '../cart/cart.model';
 import { MainInitialState } from './main.model';
 import {
   fetchMainBannerData,
@@ -16,6 +17,7 @@ const initialState: MainInitialState = {
     original_price: 0,
     discount_rate: 0,
     discounted_price: 0,
+    count: 0,
   },
   mainBannerData: {
     id: 0,
@@ -53,6 +55,7 @@ const initialState: MainInitialState = {
       sold_out_title: '',
       sold_out_text: '',
       sticker: null,
+      count: 0,
     },
   ],
   randomCollectionData: {
@@ -79,6 +82,7 @@ const initialState: MainInitialState = {
           sold_out_title: '',
           sold_out_text: '',
           sticker: null,
+          count: 0,
         },
       ],
     },
@@ -107,6 +111,7 @@ const initialState: MainInitialState = {
           sold_out_title: '',
           sold_out_text: '',
           sticker: null,
+          count: 0,
         },
       ],
     },
@@ -120,7 +125,7 @@ export const mainSlice = createSlice({
     updateCode: (state, action: PayloadAction<string>) => {
       state.code = action.payload;
     },
-    updateCart: (state, action: PayloadAction<any>) => {
+    updateCart: (state, action: PayloadAction<CartInfo>) => {
       state.cartInfo = action.payload;
     },
   },

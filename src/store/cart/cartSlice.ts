@@ -7,7 +7,9 @@ const initialState: CartInitialState = {
     list_image_url: '',
     name: '',
     original_price: 0,
+    count: 0,
   },
+  updatedCount: 0,
 };
 
 export const cartSlice = createSlice({
@@ -17,9 +19,12 @@ export const cartSlice = createSlice({
     updateAddCart: (state, action: PayloadAction<CartInfo>) => {
       state.cartInfo = action.payload;
     },
+    updateCartItemNum: (state, action: PayloadAction<number>) => {
+      state.updatedCount = action.payload;
+    },
   },
 });
 
-export const { updateAddCart } = cartSlice.actions;
+export const { updateAddCart, updateCartItemNum } = cartSlice.actions;
 
 export default cartSlice.reducer;

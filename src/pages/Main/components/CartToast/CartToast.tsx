@@ -1,6 +1,6 @@
-import Toast from '../../../../components/Toast'
+import Toast from '../../../../components/Toast';
+import { CartInfo } from '../../../../store/cart/cart.model';
 import * as S from '../../../../styles/cartToastStyles';
-import { CartInfo } from '../../../Cart/models';
 
 interface Props {
   data: CartInfo;
