@@ -1,9 +1,12 @@
+import { CartInfo } from '../cart/cart.model';
+
 export interface MainInitialState extends CategoryRes {
   mainBannerData: MainBannerRes;
   mdChoiceCategoryData: CategoryRes[];
-  mdChoiceProductData: MdChoiceProductRes[];
+  mdChoiceProductData: ProductInfo[];
   randomCollectionData: RandomCollectionDataRes;
   randomCollectionData2: RandomCollectionDataRes;
+  cartInfo: CartInfo;
 }
 
 export interface MainBannerRes {
@@ -20,20 +23,22 @@ export interface MainBannerRes {
     link?: string;
   }[];
 }
+export interface ProductSticker {
+  content: {
+    text: string;
+    weight: string;
+  }[];
+  opacity: number;
+  background_color: string;
+}
 
-export interface MdChoiceProductRes {
+export interface ProductInfo extends CartInfo {
   code?: string;
   no?: number;
-  name: string;
-  short_description?: string;
-  list_image_url: string;
-  original_price: number;
-  discounted_price: number;
-  discount_rate: number;
   is_sold_out?: boolean;
   sold_out_title?: string;
   sold_out_text?: string;
-  sticker?: null;
+  sticker?: ProductSticker | null;
 }
 
 export interface RandomCollectionDataRes {
@@ -47,19 +52,7 @@ export interface RandomCollectionDataRes {
   data: {
     collection_code: string;
     has_more: true;
-    products: {
-      no: number;
-      name: string;
-      short_description: string;
-      list_image_url: string;
-      original_price: number;
-      discounted_price: number;
-      discount_rate: number;
-      is_sold_out: boolean;
-      sold_out_title: string;
-      sold_out_text: string;
-      sticker: null;
-    }[];
+    products: ProductInfo[];
   };
 }
 

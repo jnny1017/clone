@@ -128,10 +128,25 @@ export const reset = css`
     border-collapse: collapse;
     border-spacing: 0;
   }
-  a{
+  a {
     text-decoration: none;
   }
-  ul,ol,li{
+  ul,
+  ol,
+  li {
     list-style: none;
+  }
+
+  button {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
+    line-height: normal;
+    cursor: pointer;
+    -webkit-font-smoothing: inherit;
+    -webkit-appearance: none;
   }
 `;

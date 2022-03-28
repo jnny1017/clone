@@ -7,7 +7,18 @@ export const Slide = styled.div`
   flex-direction: column;
 `;
 
-export const Thumbnail = styled.img`
+// export const Link = styled.a`
+//   display: block;
+// `;
+
+export const Thumbnail = styled.div`
+  position: relative;
+  width: 249px;
+  height: 320px;
+  cursor: pointer;
+`;
+
+export const ThumbnailImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -52,4 +63,24 @@ export const DiscountPrice = styled.span`
   font-weight: 800;
   line-height: 1.5;
   white-space: nowrap;
+`;
+
+//TODO 이미지 주소 로컬로 바꾸기
+export const CartButton = styled.button`
+  position: absolute;
+  z-index: 100;
+  right: 16px;
+  bottom: 16px;
+  width: 45px;
+  height: 45px;
+  background: url('https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/cart_white_45_45.svg');
+`;
+
+export const Blind = styled.div`
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
 `;

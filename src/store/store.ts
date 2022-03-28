@@ -1,9 +1,11 @@
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import mainReducer from './main/mainSlice';
-import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import cartReducer from './cart/cartSlice';
 
 const rootReducers = {
   main: mainReducer,
+  cart: cartReducer,
 };
 
 export const reducers = combineReducers({
