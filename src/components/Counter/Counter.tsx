@@ -1,27 +1,36 @@
-import { useCounterContext } from '../../contexts/Counter/WithCounter';
-import * as S from '../../styles/counterStyles'
+// import { useCounterContext } from '../../contexts/Counter/WithCounter';
+import Icon from '../Icon';
+import Button from '../Button';
+import * as S from '../../styles/counterStyles';
+import { useEffect, useState } from 'react';
+import { updateCartItemNum } from '../../store/cart/cartSlice';
+import { useAppDispatch } from '../../store/store';
 
-export default function Counter() {
-  const { count, setCount } = useCounterContext();
+interface Props {
+  count: number;
+}
 
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
+export default function Counter({ count }: Props) {
+  const dispatch = useAppDispatch();
+
+  const [updatedCount, setCount] = useState(count);
+
+  const increment = () => setCount(updatedCount + 1);
+  const decrement = () => setCount(updatedCount - 1);
+
+  useEffect(() => {
+    dispatch(updateCartItemNum(updatedCount));
+  }, [updatedCount]);
 
   return (
     <S.Counter>
-      <S.Button
-        type="button"
-        onClick={decrement}
-      >
-        수량 감소
-      </S.Button>
-      <S.Input type="number" value={count} readOnly />
-      <S.Button
-        type="button"
-        onClick={increment}
-      >
-        수량 증가
-      </S.Button>
+      <Button onClick={decrement}>
+        <Icon imgSrc="ico_minus" />
+      </Button>
+      <S.Input type="number" value={updatedCount} readOnly />
+      <Button onClick={increment}>
+        <Icon imgSrc="ico_plus" />
+      </Button>
     </S.Counter>
   );
 }

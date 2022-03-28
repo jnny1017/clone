@@ -1,20 +1,26 @@
 import { CategoryInfo } from '../CategoryFilter/models/category.model';
-import { ProductInfo } from '../model/product.model';
 import Section from '../Section';
 import CategoryFilter from '../CategoryFilter';
-import { SliderItemModel } from '../Slider/models/sliderItem.model';
 import Slider from '../../components/Slider';
 import { useAppSelector } from '../../store/store';
+import { CartInfo } from '../../store/cart/cart.model';
+import { ProductInfo } from '../../store/main/main.model';
 
 interface Props {
   title: string;
   categoryData: CategoryInfo[];
   productData: ProductInfo[];
   onClick: (code: string) => void;
-  onClickModal: (slide: SliderItemModel) => void;
+  onClickModal: (slide: CartInfo) => void;
 }
 
-function PickSection({ title, categoryData, productData, onClick, onClickModal }: Props) {
+function PickSection({
+  title,
+  categoryData,
+  productData,
+  onClick,
+  onClickModal,
+}: Props) {
   const filteredList = useAppSelector(state => {
     const { code } = state.main;
 

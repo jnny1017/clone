@@ -5,12 +5,22 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useEffect } from 'react';
 
 interface Props {
   slides: Pick<MainBannerInfo, 'data'>;
 }
 
 export default function BannerSlider({ slides }: Props) {
+  // refactor: banner image preloading
+  useEffect(() => {
+    const img = new Image();
+
+    slides.data.forEach(({ image_url }) => {
+      img.src = image_url;
+    });
+  }, [slides.data.length]);
+
   return (
     <Swiper
       lazy={true}
