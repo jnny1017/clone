@@ -1,7 +1,3 @@
-import {
-  useCounterContext,
-  WithCounter,
-} from '../../../../contexts/Counter/WithCounter';
 import Modal from '../../../../components/Modal';
 import Counter from '../../../../components/Counter';
 import * as S from '../../../../styles/cartModalStyles';
@@ -13,7 +9,7 @@ interface Props {
   onClickAddCart: () => void;
 }
 
-function CartModal({ data, onClickCancel, onClickAddCart }: Props) {
+export default function CartModal({ data, onClickCancel, onClickAddCart }: Props) {
   const { name, discount_rate, discounted_price, original_price, count } = data;
 
   function handleClickAddCart() {
@@ -32,8 +28,8 @@ function CartModal({ data, onClickCancel, onClickAddCart }: Props) {
               <S.Price>{original_price}원</S.Price>
             </>
           ) : (
-            <S.DiscountPrice>{original_price}원</S.DiscountPrice>
-          )}
+              <S.DiscountPrice>{original_price}원</S.DiscountPrice>
+            )}
           <Counter count={count} />
         </S.Row>
         <S.Row>
@@ -43,8 +39,8 @@ function CartModal({ data, onClickCancel, onClickAddCart }: Props) {
               {discounted_price && discounted_price * count}원
             </S.DiscountPrice>
           ) : (
-            <S.DiscountPrice>{original_price * count}원</S.DiscountPrice>
-          )}
+              <S.DiscountPrice>{original_price * count}원</S.DiscountPrice>
+            )}
         </S.Row>
         <S.Row>
           <S.Button type="button" onClick={onClickCancel}>
@@ -58,5 +54,3 @@ function CartModal({ data, onClickCancel, onClickAddCart }: Props) {
     </Modal>
   );
 }
-
-export default WithCounter(CartModal);
